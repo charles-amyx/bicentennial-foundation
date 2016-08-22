@@ -49,10 +49,17 @@
         .web_header {
             font-family: 'bebas_neuebold';
             color: $tappan-red;
+            font-size: 1.35rem;
         }
         .category {
             font-family: 'bebas_neuebold';
-            font-size: 1.25rem;
+            font-size: 1.35rem;
+            &:before {
+                content: '';
+                display: block;
+                height: 100%;
+                border-left: 1px solid $light-gray;
+            }
         }
     }
     
@@ -73,7 +80,7 @@
         li {
             a {
                 padding: 0 !important;
-                font-size: 0.8125rem;
+                font-size: 0.9rem;
                 color: $white !important;
                 display: block;
                 &:hover {
