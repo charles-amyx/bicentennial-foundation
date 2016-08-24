@@ -11,147 +11,151 @@
 </head>
 
 <body> <div id="skip"><a href="#content">Skip to Main Content</a></div>
-<div class="title-bar">
-    <div class="row bottom expanded collapse">
-        <div class="title-bar-title medium-4 large-4 column">
-            <button class="hamburger hamburger--slider" type="button" data-toggle="main-menu"><span class="hamburger-box">
-    <span class="hamburger-inner"></span></button>
-            <a class="logo" href=""><img src="./assets/img/CoE-horiz-rev.svg" alt="College of Engineering | University of Michigan"></a>
-        </div>
-        <div class="medium-8 large-8 column main_menu disable-selection" data-toggle="main-menu">
-            <div class="row">
-                <div class="large-3 column">
-                    <div class="web_header">Bicentennial Web Project</div>
+<div class="navigation" data-sticky-container>
+    <div class="title-bar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+        <div class="row bottom expanded collapse">
+            <div class="title-bar-title medium-4 large-4 column">
+                <button class="hamburger hamburger--slider" type="button" data-toggle="main-menu"><span class="hamburger-box"><span class="hamburger-inner"></span></button>
+                <a class="logo" href=""><img src="./assets/img/CoE-horiz-rev.svg" alt="College of Engineering | University of Michigan"></a>
+            </div>
+            <div class="medium-8 large-8 column main_menu disable-selection" data-toggle="main-menu">
+                <div class="row ">
+                    <div class="medium-3 large-3 column category">
+                        <div class="web_header">Bicentennial Web Project</div>
+                    </div>
+                    <div class="medium-2 large-2 column hide-for-small category"><span class="">Story Type</span></div>
+                    <div class="medium-2 large-2 column hide-for-small category"><span class="">Time Travel</span></div>
+                    <div class="medium-3 large-3 column hide-for-small category"><span class="">Subject Areas</span></div>
+                    <div class="medium-2 large-2 column hide-for-small category"><span class="">Upcoming</span></div>
                 </div>
-                <div class="large-2 column hide-for-small"><span class="category">Story Type</span></div>
-                <div class="large-2 column hide-for-small"><span class="category">Time Travel</span></div>
-                <div class="large-2 column hide-for-small"><span class="category">Subject Areas</span></div>
-                <div class="large-2 column hide-for-small"><span class="category">Upcoming</span></div>
             </div>
         </div>
-    </div>
-    <div class="dropdown-pane" id="main-menu" data-dropdown>
-        <div class="row expanded">
+        <div class="dropdown-pane row expanded collapse" id="main-menu" data-dropdown data-sticky>
             <div class="medium-4 large-4 column">
                 <input type="text">
-                </button>
             </div>
             <div class="medium-8 large-8 column">
-                <div class="row">
+                <div class="row ">
                     <div class="medium-3 large-3 column">
                         <input type="text">
                     </div>
-                    <!--end of .column-->
                     <div class="medium-2 large-2 column sub_categories">
                         <ul>
-                            <li class="hide-for-large">Story Type</li>
-                            <li>
+                            <li class="hide-for-medium hide-for-large">Story Type</li>
+                            <li class="item">
                                 <a href="#">Impact</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Legends</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Experience</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">On the move</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Quirky</a>
+                            </li>
+                            <li class="item">
+                                <a href="#">See all Stories »</a>
                             </li>
                         </ul>
                     </div>
-                    <!--end of .column-->
                     <div class="medium-2 large-2 column sub_categories">
                         <ul>
-                            <li class="hide-for-large">Time Travel</li>
-                            <li>
+                            <li class="hide-for-medium hide-for-large">Time Travel</li>
+                            <li class="item">
                                 <a href="#">1800s</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">1900s</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">1900s</a>
-                            </li>
-                            <li>
+                            </li class="item">
+                            <li class="item">
                                 <a href="#">1950s</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">2000s</a>
                             </li>
+                            <li class="item">
+                                <a href="#">See all Decades »</a>
+                            </li>
                     </div>
-                    <div class="medium-2 large-2 column sub_categories">
+                    <div class="medium-3 large-3 column sub_categories">
                         <ul class="inset_shadow">
-                            <li class="hide-for-large">Subject Areas</li>
-                            <li>
+                            <li class="hide-for-medium hide-for-large">Subject Areas</li>
+                            <li class="item">
                                 <a href="#">Aerospace</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Biomedical</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Chemical</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Civil and Environmental</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Climate and Space</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Computer Science</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Electrical and Computer</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Industrial and Operations</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Materials Science</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Mechanical</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Multidisciplinary</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Naval Arch and Marine</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Nuclear and Radiological</a>
+                            </li>
+                            <li class="item">
+                                <a href="#">See all Areas »</a>
                             </li>
                     </div>
                     <div class="medium-2 large-2 column sub_categories">
                         <ul>
-                            <li class="hide-for-large">Upcoming</li>
-                            <li>
+                            <li class="hide-for-medium hide-for-large">Upcoming</li>
+                            <li class="item">
                                 <a href="#">Events</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Stories</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Activities</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">About</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <a href="#">Contact</a>
                             </li>
                     </div>
-                    <!--end of .column-->
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-  <div class="home">
+  <div class="home" id="content">
     <!--Lead Row-->
     <section class="row feature_row expanded small-collapse medium-collapse large-collapse wow fadeIn">
         <!--Lead Row-->
@@ -189,7 +193,7 @@
         <div class="large-12 medium-12 columns">
             <h5>Discipline</h5>
             <div class="row medium-collapse large-collapse">
-                 <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="">
+                 <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="Two column item image descriptive text">
     <div class="overlay medium-10 large-7 large-centered text-center">
         <a href="#linkme">
             <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
@@ -199,7 +203,7 @@
     </div>
 </div>
 
-  <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="">
+  <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="Two column item image descriptive text">
     <div class="overlay medium-10 large-7 large-centered text-center">
         <a href="#linkme">
             <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
@@ -217,7 +221,7 @@
         <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
         <div class="card-title"><span>Vehicula Ligula Lorem Aenean</span></div>
         <div class="card-image">
-            <img src="./assets/img/16-9.jpg">
+            <img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text">
         </div>
         <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
@@ -233,7 +237,7 @@
         <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
         <div class="card-title"><span>Vehicula Ligula Lorem Aenean</span></div>
         <div class="card-image">
-            <img src="./assets/img/16-9.jpg">
+            <img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text">
         </div>
         <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
@@ -249,7 +253,7 @@
         <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
         <div class="card-title"><span>Vehicula Ligula Lorem Aenean</span></div>
         <div class="card-image">
-            <img src="./assets/img/16-9.jpg">
+            <img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text">
         </div>
         <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
@@ -264,7 +268,7 @@
                 <div class="columns">
                     <div class="category_secondary_feature category_link light-blue card" data-equalizer-watch>
                         <div class="card-action large_action white-text">
-                            <a href="#"><span class="thin-text">Read all</span><br>engineering stories »</a>
+                            <a href="#"><span class="bottom"><span class="thin-text">Read all</span><br>engineering stories »</span></a>
                         </div>
                     </div>
                 </div>
@@ -285,7 +289,7 @@
     </section>
     <section class="row expanded sharing_row brand_lines">
         <div class="small-12 medium-11 large-11 large-centered sharing_box row collapse">
-            <div class="small-12 medium-4 large-4 columns get_more_image"><span class="label black get_more_label">GET MORE</span><img src="https://unsplash.it/g/1000/750?random&amp;blur" alt=""></div>
+            <div class="small-12 medium-4 large-4 columns get_more_image"><span class="label black get_more_label">GET MORE</span><img src="https://unsplash.it/g/1000/750?random&amp;blur" alt="Sharing box image descriptive text"></div>
             <div class="small-12 medium-3 large-3 columns single_social_post"><span class="label light-blue">Twitter</span>
                 <div class="social_post_container">
                     <div class="time_stamp">TWO HOURS AGO</div>
@@ -341,7 +345,7 @@
         <div class="large-12 medium-12 columns">
             <h5>Time Travel</h5>
             <div class="row medium-collapse large-collapse">
-                 <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="">
+                 <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="Two column item image descriptive text">
     <div class="overlay medium-10 large-7 large-centered text-center">
         <a href="#linkme">
             <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
@@ -351,7 +355,7 @@
     </div>
 </div>
 
-  <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="">
+  <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="Two column item image descriptive text">
     <div class="overlay medium-10 large-7 large-centered text-center">
         <a href="#linkme">
             <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
@@ -369,7 +373,7 @@
         <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
         <div class="card-title"><span>Vehicula Ligula Lorem Aenean</span></div>
         <div class="card-image">
-            <img src="./assets/img/16-9.jpg">
+            <img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text">
         </div>
         <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
@@ -385,7 +389,7 @@
         <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
         <div class="card-title"><span>Vehicula Ligula Lorem Aenean</span></div>
         <div class="card-image">
-            <img src="./assets/img/16-9.jpg">
+            <img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text">
         </div>
         <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
@@ -401,7 +405,7 @@
         <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
         <div class="card-title"><span>Vehicula Ligula Lorem Aenean</span></div>
         <div class="card-image">
-            <img src="./assets/img/16-9.jpg">
+            <img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text">
         </div>
         <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
@@ -416,7 +420,7 @@
                 <div class="columns">
                     <div class="category_secondary_feature category_link red card" data-equalizer-watch>
                         <div class="card-action large_action white-text">
-                            <a href="#"><span class="thin-text">Read all</span><br>time travel stories »</a>
+                            <a href="#"><span class="bottom"><span class="thin-text">Read all</span><br>time travel stories »</span></a>
                         </div>
                     </div>
                 </div>
@@ -425,7 +429,7 @@
     </section>
     <section class="row expanded old_school_cool brand_lines">
         <div class="small-12 medium-11 large-11 large-centered old_school_box row collapse">
-            <div class="small-12 medium-6 large-7 columns"><img src="https://unsplash.it/g/1200/675?random&amp;blur" alt=""></div>
+            <div class="small-12 medium-6 large-7 columns"><img src="https://unsplash.it/g/1200/675?random&amp;blur" alt="Old School Cool image descriptive text"></div>
             <div class="small-12 medium-6 large-5 columns">
                 <div class="photo_text_container"><span class="label teal">Old School Cool</span>
                     <div class="photo_headline">Aenean Malesuada Consectetur Bibendum Porta Tellus Adipiscing</div>
@@ -440,7 +444,7 @@
         <div class="large-12 medium-12 columns">
             <h5>Story Types</h5>
             <div class="row medium-collapse large-collapse">
-                 <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="">
+                 <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="Two column item image descriptive text">
     <div class="overlay medium-10 large-7 large-centered text-center">
         <a href="#linkme">
             <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
@@ -450,7 +454,7 @@
     </div>
 </div>
 
-  <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="">
+  <div class="medium-6 large-6 columns category_feature"><img src="https://unsplash.it/g/1200/?random&amp;blur" alt="Two column item image descriptive text">
     <div class="overlay medium-10 large-7 large-centered text-center">
         <a href="#linkme">
             <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
@@ -468,7 +472,7 @@
         <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
         <div class="card-title"><span>Vehicula Ligula Lorem Aenean</span></div>
         <div class="card-image">
-            <img src="./assets/img/16-9.jpg">
+            <img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text">
         </div>
         <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
@@ -484,7 +488,7 @@
         <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
         <div class="card-title"><span>Vehicula Ligula Lorem Aenean</span></div>
         <div class="card-image">
-            <img src="./assets/img/16-9.jpg">
+            <img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text">
         </div>
         <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
@@ -500,7 +504,7 @@
         <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
         <div class="card-title"><span>Vehicula Ligula Lorem Aenean</span></div>
         <div class="card-image">
-            <img src="./assets/img/16-9.jpg">
+            <img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text">
         </div>
         <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
@@ -515,7 +519,7 @@
                 <div class="columns">
                     <div class="category_secondary_feature category_link blue card" data-equalizer-watch>
                         <div class="card-action large_action white-text">
-                            <a href="#"><span class="thin-text">Read all</span><br>story types »</a>
+                            <a href="#"><span class="bottom"><span class="thin-text">Read all</span><br>story types »</span></a>
                         </div>
                     </div>
                 </div>
@@ -606,5 +610,13 @@
 
 </body>
 <script src="assets/js/app.js"></script>
+<script>
+$(document).foundation();
+$('.title-bar').on('sticky.zf.stuckto:top', function() {
+    $(this).addClass('shrink');
+}).on('sticky.zf.unstuckfrom:top', function() {
+    $(this).removeClass('shrink');
+})
+</script>
 
 </html>

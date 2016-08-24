@@ -14,5 +14,13 @@
 <body> {{> navigation}} {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> body}} {{> footer}}
 </body>
 <script src="{{root}}assets/js/app.js"></script>
+<script>
+$(document).foundation();
+$('.title-bar').on('sticky.zf.stuckto:top', function() {
+    $(this).addClass('shrink');
+}).on('sticky.zf.unstuckfrom:top', function() {
+    $(this).removeClass('shrink');
+})
+</script>
 
 </html>

@@ -214,10 +214,18 @@ div.home {
                 text-transform: uppercase;
             }
         }
+        &.card {
+            @include breakpoint(medium down) {
+                margin-bottom: 1.5rem
+            }
+            &:hover {
+                box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.23), 0 1px 20px 0 rgba(0, 0, 0, 0.18);
+            }
+        }
         &.category_link.card {
             cursor: pointer;
             &:hover {
-                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.33), 0 1px 5px 0 rgba(0, 0, 0, 0.28);
+                box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5), 0 1px 20px 0 rgba(0, 0, 0, 0.33);
             }
         }
         .card-title {
@@ -226,15 +234,24 @@ div.home {
         }
         .card-action.large_action {
             padding: $card-padding;
-            position: absolute;
-            bottom: 0;
+            position: initial;
+            height: 100%;
+            //bottom: 0;
             a {
                 font-family: 'bebas_neuebold';
                 font-size: 4rem;
                 color: $white !important;
                 line-height: .8;
+                display: block;
+                height: 100%;
+                position: relative;
                 &:hover {
-                    color: $black !important;
+                    color: $medium-gray !important;
+                }
+                .bottom {
+                    display: block;
+                    position: absolute;
+                    bottom: 0px;
                 }
             }
         }
