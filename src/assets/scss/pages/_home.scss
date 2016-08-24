@@ -128,21 +128,21 @@ div.home {
             @include breakpoint(medium down) {
                 display: none;
             }
-            content: '';
-            background-image: linear-gradient( to right top,
-            transparent 0%,
-            transparent 33%,
-            $dark-gray 33%,
-            $dark-gray 66%,
-            transparent 66%,
-            transparent 100%);
-            background-size: 3px 3px;
+            content: '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\';
+            font-family: 'bebas_neuelight';
+            font-size: 10px;
             width: 86%;
-            height: 10px;
+            overflow: hidden;
             display: inline-block;
             float: right;
             margin-top: 33px;
         }
+    }
+    .brand_lines {
+        background-image: linear-gradient( to right top, transparent 0%, transparent 33%, $medium-gray 33%, $medium-gray 66%, transparent 66%, transparent 100%);
+        background-size: 3px 3px;
+        padding: 3rem 0;
+        margin-bottom: 2.75rem;
     }
     .row.large-collapse {
         margin-bottom: 1.25rem;
@@ -293,10 +293,6 @@ div.home {
     //
     //
     .sharing_row {
-        background-image: linear-gradient( to right top, transparent 0%, transparent 33%, $medium-gray 33%, $medium-gray 66%, transparent 66%, transparent 100%);
-        background-size: 3px 3px;
-        padding: 3rem 0;
-        margin-bottom: 2.75rem;
         .sharing_box {
             background-color: $white;
         }
@@ -376,10 +372,6 @@ div.home {
     //
     //
     .old_school_cool {
-        background-image: linear-gradient( to right top, transparent 0%, transparent 33%, $medium-gray 33%, $medium-gray 66%, transparent 66%, transparent 100%);
-        background-size: 3px 3px;
-        padding: 3rem 0;
-        margin-bottom: 2.75rem;
         .old_school_box {
             background-color: $white;
             .photo_text_container {
