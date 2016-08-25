@@ -222,6 +222,12 @@ $-zf-flex-classes-imported: false;
     }
 }
 
+.button {
+    margin-bottom: 0 !important;
+    padding: .55rem;
+    border-radius: 0;
+}
+
 /// Loads normalize.css.
 /// @access private
 @mixin -zf-normalize {
@@ -695,7 +701,7 @@ $-zf-flex-classes-imported: false;
     }
 }
 
-//  Four Column Cards 
+//  Cards 
 //  -------------------------
 //
 //
@@ -727,6 +733,12 @@ $-zf-flex-classes-imported: false;
     .card-title {
         font-family: 'bebas_neuebold';
         margin: -10px 0 0;
+        a {
+          color: $black;
+          &:hover {
+            color: $black-100;
+          }
+        }
     }
     .card-action.large_action {
         padding: $card-padding;

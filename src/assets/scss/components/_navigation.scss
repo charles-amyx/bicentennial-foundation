@@ -33,6 +33,15 @@
             padding: 0;
             opacity: 1;
             transition: all .15s ease;
+            .title-bar-title {
+                position: absolute;
+                bottom: 10px;
+                a.logo {
+                    display: inline;
+                    width: 80%;
+                    height: 30px;
+                }
+            }
             .dropdown-pane {
                 max-height: initial !important;
                 width: 100% !important;
@@ -48,7 +57,7 @@
                     a {
                         padding: .5rem 0 !important;
                         font-size: 0.9rem;
-                        color: $white !important;
+                        color: $light-gray !important;
                         &:hover {
                             background: none;
                             color: $michigan-maize !important;
@@ -56,7 +65,7 @@
                     }
                 }
                 .sub_categories {
-                    border-left: 1px solid $light-gray;
+                    border-left: 1px solid rgba($light-gray, .5);
                 }
             }
             &.shrink {
@@ -66,6 +75,12 @@
                 background: $black-100;
                 .dropdown-pane {
                     background: $black-100;
+                }
+                .web_header {
+                    opacity: .8;
+                }
+                .category span {
+                    color: $light-gray;
                 }
             }
             &.sticky {
@@ -91,20 +106,42 @@
             .category {
                 font-family: 'bebas_neuebold';
                 font-size: 1.35rem;
-                border-left: 1px solid $light-gray;
+                border-left: 1px solid rgba($light-gray, .5);
+                height: 100px;
                 &:first-child {
-                    border: 0;
+                    border-left: 0;
+                }
+                span {
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    opacity: .8;
+                    transition: opacity .15s ease;
+                    &:hover {
+                        opacity: 1;
+                        transition: opacity .15s ease;
+                    }
                 }
                 .web_header {
                     font-family: 'bebas_neuebold';
                     color: $michigan-maize;
                     font-size: 1.35rem;
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
                     @include breakpoint(medium down) {
                         font-size: 1rem;
                     }
                 }
                 @include breakpoint(medium down) {
                     font-size: 1rem;
+                }
+            }
+            &.hover {
+                .category {
+                    span {
+                        opacity: 1;
+                    }
                 }
             }
         }
