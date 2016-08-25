@@ -6,7 +6,7 @@
     <!--Engin Disp Row-->
     <section class="row expanded category">
         <div class="large-12 medium-12 columns">
-            <h5>Discipline</h5>
+            <h5>Subject Areas</h5>
             <div class="row medium-collapse large-collapse">
                 {{#repeat 2}} {{> two_column_items}} {{/repeat}}
             </div>
@@ -15,23 +15,22 @@
                 <div class="columns">
                     <div class="category_secondary_feature category_link light-blue card" data-equalizer-watch>
                         <div class="card-action large_action white-text">
-                            <a href="#"><span class="bottom"><span class="thin-text">Read all</span><br>engineering stories »</span></a>
+                            <a href="#"><span class="bottom"><span class="thin-text">see all</span><br>subject areas »</span></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="row expanded full_width_feature">
-        <div class="parallax-window" data-image-src="./assets/img/lead.jpg" data-z-index="0" data-bleed="0" data-parallax="scroll">
-            <div class="large-6 large-centered text-center overlay_container">
-                <div class="full_width_feature_overlay">
-                    <hr>
-                    <p class="serif-itals">The Leadership and Legacy of</p>
-                    <p class="sans-hed-bold">Michigan Engineering</p>
-                    <hr>
-                </div>
-            </div>
+    <section class="video_wrap row expanded full_width_feature video">
+        <video id="my-video" preload="metadata" autoplay loop>
+            <source src="https://archive.org/download/Starry_Sky_Time_Lapse/Stars%20H264.mp4" type="video/mp4">
+        </video>
+        <div class="full_width_feature_overlay">
+            <hr>
+            <p class="serif-itals">The Leadership and Legacy of</p>
+            <p class="sans-hed-bold">Michigan Engineering</p>
+            <hr>
         </div>
     </section>
     <section class="row expanded sharing_row brand_lines">
@@ -41,7 +40,7 @@
                 <div class="social_post_container">
                     <div class="time_stamp">TWO HOURS AGO</div>
                     <div class="social_post"><span class="social_handle">@michiganengineering</span>: Tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
-                    <div class="follow_button"><a href="#button" class="button waves-effect waves-light raised-button secondary">FOLLOW</a></div>
+                    <div class="follow_button"><a href="{{root}}" class="button waves-effect waves-light raised-button secondary">FOLLOW</a></div>
                 </div>
             </div>
             <div class="small-12 medium-2 large-2 columns social_channels"><span class="label yellow">FOLLOW US</span>
@@ -81,7 +80,7 @@
                     <div class="input-group">
                         <input class="input-group-field" type="text">
                         <div class="input-group-button">
-                            <input type="submit" class="button" value="Submit">
+                            <input type="submit" class="button waves-effect waves-light" value="Submit">
                         </div>
                     </div>
                 </form>
@@ -99,7 +98,7 @@
                 <div class="columns">
                     <div class="category_secondary_feature category_link red card" data-equalizer-watch>
                         <div class="card-action large_action white-text">
-                            <a href="#"><span class="bottom"><span class="thin-text">Read all</span><br>time travel stories »</span></a>
+                            <a href="#"><span class="bottom"><span class="thin-text">see all</span><br>time travel stories »</span></a>
                         </div>
                     </div>
                 </div>
@@ -130,11 +129,31 @@
                 <div class="columns">
                     <div class="category_secondary_feature category_link blue card" data-equalizer-watch>
                         <div class="card-action large_action white-text">
-                            <a href="#"><span class="bottom"><span class="thin-text">Read all</span><br>story types »</span></a>
+                            <a href="{{root}}"><span class="bottom"><span class="thin-text">see all</span><br>story types »</span></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="row expanded events brand_lines">
+        <div class="small-12 medium-11 large-11 large-centered events_box row collapse">
+            <div class="small-12 medium-6 large-5 columns events_main_containter">
+                <div class="events_headline">Bicentennial Events</div>
+                <div class="events_text">Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+                <div class="follow_button"><a href="{{root}}" class="button waves-effect waves-light raised-button light-blue">see all events</a></div>
+            </div>
+            <div class="small-12 medium-6 large-4 columns events_image"><img src="https://unsplash.it/g/1200?random&amp;blur" alt="Events image descriptive text"></div>
+            <div class="small-12 medium-6 large-3 columns events_main_containter">
+                <div class="events_headline_small">Aenean Tellus Adipiscing</div>
+                <div class="events_text">
+                    <p><strong>Where:</strong> 1200 Pantalones Ave
+                        <br>Room 0101</p>
+                    <p><strong>When:</strong> MM/DD/YYYY @ HH:MM am/pm</p>
+                    <p><strong>Details:</strong> Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
 </div>

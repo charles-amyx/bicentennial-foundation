@@ -1,0 +1,68 @@
+<div class="decades" id="content">
+    <section class="row expanded timeline">
+        <h5>Decades</h5> {{> timeline}}</section>
+    <section class="row expanded category">
+        <div class="large-12 medium-12 columns">
+            <div class="row medium-collapse large-collapse">
+                {{#repeat 2}} {{> two_column_items}} {{/repeat}}
+            </div>
+            <div class="row small-up-1 medium-up-2 large-up-4" data-equalizer data-equalize-by-row="true">
+                {{#repeat 4}} {{> card}} {{/repeat}} {{#repeat 4}} {{> card}} {{/repeat}}
+            </div>
+        </div>
+    </section>
+    <section class="row expanded sharing_row brand_lines">
+        <div class="small-12 medium-11 large-11 large-centered sharing_box row collapse">
+            <div class="small-12 medium-4 large-4 columns get_more_image"><span class="label black get_more_label">GET MORE</span><img src="https://unsplash.it/g/1000/750?random&amp;blur" alt="Sharing box image descriptive text"></div>
+            <div class="small-12 medium-3 large-3 columns single_social_post"><span class="label light-blue">Twitter</span>
+                <div class="social_post_container">
+                    <div class="time_stamp">TWO HOURS AGO</div>
+                    <div class="social_post"><span class="social_handle">@michiganengineering</span>: Tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
+                    <div class="follow_button"><a href="#button" class="button waves-effect waves-light raised-button secondary">FOLLOW</a></div>
+                </div>
+            </div>
+            <div class="small-12 medium-2 large-2 columns social_channels"><span class="label yellow">FOLLOW US</span>
+                <div class="icons_row">
+                    <a class="facebook" href="#link"><span class="fa-stack fa-lg">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span></a>
+                    <a class="twitter" href="#link"><span class="fa-stack fa-lg">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span></a>
+                    <a class="instagram" href="#link"><span class="fa-stack fa-lg">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                        </span></a>
+                </div>
+                <div class="icons_row">
+                    <a class="snapchat" href="#link"><span class="fa-stack fa-lg">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-snapchat fa-stack-1x fa-inverse"></i>
+                                    </span></a>
+                    <a class="flickr" href="#link"><span class="fa-stack fa-lg">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                                        </span></a>
+                    <a class="youtube" href="#link"><span class="fa-stack fa-lg">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                        </span></a>
+                </div>
+            </div>
+            <div class="small-12 medium-3 large-3 columns newsletter"><span class="label blue">NEWSLETTER</span>
+                <div class="newsletter_text">Would you like to stay up-to-date with latest from Michigan Engineering?
+                    <br>Sign up for our newsletter.</div>
+                <form>
+                    <div class="input-group">
+                        <input class="input-group-field" type="text">
+                        <div class="input-group-button">
+                            <input type="submit" class="button" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>

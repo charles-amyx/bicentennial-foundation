@@ -15,12 +15,17 @@
 </body>
 <script src="{{root}}assets/js/app.js"></script>
 <script>
-$(document).foundation();
 $('.title-bar').on('sticky.zf.stuckto:top', function() {
     $(this).addClass('shrink');
 }).on('sticky.zf.unstuckfrom:top', function() {
     $(this).removeClass('shrink');
-})
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#my-video').backgroundVideo();
+
+});
 </script>
 
 </html>
