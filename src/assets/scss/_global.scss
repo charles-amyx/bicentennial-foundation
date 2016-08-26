@@ -97,7 +97,7 @@ $body-antialiased: true !default;
 $global-margin: 1rem !default;
 /// Global value used for padding on components.
 /// @type Number
-$global-padding: 1rem !default;
+$global-padding: 2rem !default;
 /// Global font weight used for light type.
 /// @type Keyword | Number
 $global-weight-light: 300 !default;
@@ -650,12 +650,21 @@ $-zf-flex-classes-imported: false;
     margin-bottom: 1.25rem;
 }
 
+.decades,
+.types,
+.subject-areas {
+    margin-top: 3rem;
+    @include breakpoint(small only) {
+        margin-top: .5rem;
+    }
+}
+
 //  Two Column Wide Features
 //  -------------------------
 //
 //
 .category_feature {
-    height: 29vh;
+    height: 32vh;
     overflow: hidden;
     position: relative;
     background-color: $medium-gray;
@@ -723,6 +732,9 @@ $-zf-flex-classes-imported: false;
         &:hover {
             box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.23), 0 1px 20px 0 rgba(0, 0, 0, 0.18);
         }
+        .card-action {
+            padding-bottom: 1rem;
+        }
     }
     &.category_link.card {
         cursor: pointer;
@@ -734,10 +746,10 @@ $-zf-flex-classes-imported: false;
         font-family: 'bebas_neuebold';
         margin: -10px 0 0;
         a {
-          color: $black;
-          &:hover {
-            color: $black-100;
-          }
+            color: $black;
+            &:hover {
+                color: $black-100;
+            }
         }
     }
     .card-action.large_action {
@@ -760,6 +772,9 @@ $-zf-flex-classes-imported: false;
                 display: block;
                 position: absolute;
                 bottom: 0px;
+                @include breakpoint(small only) {
+                position: initial;
+                }
             }
         }
     }

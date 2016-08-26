@@ -26,8 +26,13 @@
     }
     
     .navigation {
+        .small-text-center {
+            @include breakpoint(small only) {
+                text-align: center;
+            }
+        }
         .title-bar {
-            background: $michigan-blue;
+            background: $black-100;
             width: 100%;
             height: 100px;
             padding: 0;
@@ -48,11 +53,17 @@
                 top: 100% !important;
                 left: 0 !important;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .25), 0 3px 10px 0 rgba(0, 0, 0, .25);
-                background: $michigan-blue;
+                background: $black-100;
                 border: 0 !important;
                 padding: 0 0 3rem !important;
                 overflow: visible;
                 transition: all .15s ease;
+                @include breakpoint(medium down) {
+                    max-height: 100vh !important;
+                    overflow: scroll !important;
+                                    padding: 0 0 3rem !important;
+
+                }
                 li {
                     a {
                         padding: .5rem 0 !important;
@@ -63,18 +74,52 @@
                             color: $michigan-maize !important;
                         }
                     }
+                    &.all-link {
+                        a {
+                            font-variant: small-caps;
+                            font-family: 'Open Sans';
+                            font-weight: 900;
+                            letter-spacing: .05rem;
+                            &:hover {
+                                color: $arboretum-blue !important;
+                                transition: all .25s ease-in-out;
+                            }
+                            @include breakpoint(small only) {
+                                padding-top: 0 !important;
+                            }
+                        }
+                        .fa-angle-double-right {
+                            font-size: 11px;
+                        }
+                        &.read-more-target {
+                            @include breakpoint(small only) {
+                                padding-bottom: 2rem;
+                            }
+                        }
+                    }
                 }
                 .sub_categories {
                     border-left: 1px solid rgba($light-gray, .5);
+                    @include breakpoint(medium down) {
+                        border-left: 0;
+                        margin-top: 1.5rem;
+                    }
+                    .hide-for-large {
+                        font-family: 'bebas_neuebold';
+                        font-size: 1.35rem;
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                        line-height: 1;
+                    }
                 }
             }
             &.shrink {
                 height: 45px;
                 opacity: .97;
                 box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .25), 0 3px 20px 0 rgba(0, 0, 0, .25);
-                background: $black-100;
+                background: darken( $michigan-blue, 3.5%);
                 .dropdown-pane {
-                    background: $black-100;
+                    background: darken( $michigan-blue, 3.5%);
                 }
                 .web_header {
                     opacity: .8;
@@ -165,20 +210,106 @@
             /* Disable Android and iOS callouts*/
         }
         .search {
+            > div:nth-child(1) > label {
+                margin-top: 1.5rem;
+            }
             label {
+                font-family: 'Open Sans';
+                font-size: 11px;
+                font-weight: 700;
                 color: $white;
+            }
+            input[type=text] {
+                background-color: rgba($light-gray, .1);
+                border: 0;
+                margin-bottom: 1rem;
+            }
+            select {
+                font-size: .9rem;
+                font-weight: 500;
+                color: $dark-gray;
+                background-color: rgba($light-gray, .1);
+                border: 0;
             }
             select option[disabled]:first-child {
                 display: none;
             }
             .button {
                 margin-bottom: 0 !important;
+                font-family: 'bebas_neuebold';
+                font-size: 1.5rem;
                 padding: .55rem;
+                margin-top: .5rem;
                 border-radius: 0;
-                width: 100%;
+                width: 33.333%;
+                cursor: pointer;
+                background-color: rgba($light-gray, .1);
+                &:hover {
+                    background: darken($arboretum-blue, 30%) !important;
+                }
             }
         }
-        .medium-4.large-4.column.search {
+        .small-12.medium-12.large-4.column.search {
             padding-left: 1rem;
+        }
+        .read-more-state {
+            display: none;
+        }
+        .read-more-target {
+            opacity: 0;
+            max-height: 0;
+            font-size: 0;
+            transition: all .25s ease;
+            z-index: 0;
+        }
+        .read-more-state:checked ~ .read-more-wrap .read-more-target {
+            opacity: 1;
+            font-size: inherit;
+            max-height: 999em;
+        }
+        .read-more-state ~ .read-more-trigger:before {
+            content: "show more areas";
+            transition: all .25s ease;
+            font-variant: small-caps;
+            font-family: 'Open Sans';
+            font-weight: 900;
+            letter-spacing: .05rem;
+        }
+        .read-more-state ~ .read-more-trigger:after {
+            content: "\f103";
+            font-family: 'FontAwesome';
+            font-size: 11px;
+            transition: all .25s ease;
+            padding-left: 3px;
+        }
+        .read-more-state:checked ~ .read-more-trigger:before {
+            content: 'show fewer areas';
+            transition: all .25s ease;
+            font-variant: small-caps;
+            font-family: 'Open Sans';
+            font-weight: 900;
+            letter-spacing: .05rem;
+        }
+        .read-more-state:checked ~ .read-more-trigger:after {
+            content: '\f102';
+            font-family: 'FontAwesome';
+            font-size: 11px;
+            transition: all .25s ease;
+            padding-left: 3px;
+        }
+        .read-more-trigger {
+            cursor: pointer;
+            display: block;
+            font-size: .9em;
+            line-height: 2;
+            margin: 0;
+            padding: .4rem 0;
+            color: $white;
+            &:hover {
+                color: $arboretum-blue !important;
+            }
+            @include breakpoint(small only) {
+                padding-top: 0 !important;
+            }
         }
     }

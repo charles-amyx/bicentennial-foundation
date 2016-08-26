@@ -1,15 +1,12 @@
 @charset 'utf-8';
 @import 'settings';
+@import 'global';
 @import 'foundation';
-@import 'motion-ui';
-@import 'style/color';
+// @import 'motion-ui';
 // Material Design - Core
 @import "core/material",
 "core/animate";
-// Material Design - Style
-@import "style/icons",
-"style/imagery",
-"style/typography";
+@import "style/typography";
 // Components
 @import "components/tabs",
 "components/buttons",
@@ -28,7 +25,7 @@
 "components/timeline",
 "components/footer",
 "components/navigation";
-@import 'global';
+// Pages
 @import 'pages/home';
 @include foundation-global-styles;
 @include foundation-grid;
@@ -64,12 +61,12 @@
 @include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;
-@include foundation-thumbnail;
+// @include foundation-thumbnail;
 @include foundation-title-bar;
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 // @include foundation-flex-classes;
-@include motion-ui-transitions;
-@include motion-ui-animations;
+// @include motion-ui-transitions;
+// @include motion-ui-animations;

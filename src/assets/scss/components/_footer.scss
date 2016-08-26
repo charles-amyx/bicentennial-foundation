@@ -1,7 +1,6 @@
 //Footer Town
 // ----------------
 footer {
-    padding: 2rem;
     background: $black;
     background: -moz-linear-gradient(top, $black 0%, $black-87 100%);
     background: -webkit-linear-gradient(top, $black 0%, $black-87 100%);
@@ -9,17 +8,54 @@ footer {
     color: $white;
     a.logo {
         img {
-            width: 30%;
+            width: 100%;
         }
     }
     h6 {
         font-family: 'bebas_neue_regularregular';
         font-size: 2rem;
+        line-height: 1;
+        @include breakpoint(medium down) {
+            font-size: 1.5rem;
+        }
     }
     p {
         margin: 0;
+        @include breakpoint(medium down) {
+            font-size: .8rem;
+        }
         a {
             color: $white;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $michigan-maize;
+            }
+        }
+    }
+    .legal {
+        @include breakpoint(medium down) {
+            font-size: .8rem;
+        }
+        a {
+            color: $white;
+            font-size: .8rem;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $michigan-maize;
+            }
+        }
+    }
+    .logo-cell {
+        padding: 2rem;
+        @include breakpoint(xlarge up) {
+            padding: 2.5rem 1rem 0 1rem;
+        }
+    }
+    .footer-text {
+        padding: 1rem 0 2rem 1.25rem;
+        border-left: 1px solid rgba($white, .4);
+        .columns {
+            padding: $global-padding;
         }
     }
 }
