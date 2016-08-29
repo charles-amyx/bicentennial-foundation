@@ -1,0 +1,116 @@
+// Articles
+.article {
+    margin-top: 4rem;
+    .article_side {
+        margin-top: 4rem;
+        .sticky-container {
+            .sticky {
+                transition: opacity .3s ease-in-out;
+                &.initial_state {
+                    opacity: 0;
+                }
+                &.is-stuck.is-at-top {
+                    top: 5rem !important;
+                    opacity: 1;
+                    transition: opacity .3s ease-in-out;
+                }
+            }
+        }
+    }
+    .tag_container {
+        margin-bottom: 0;
+        .tags {
+            display: block;
+            font-family: 'Open Sans';
+            font-weight: 900;
+            font-size: 12px;
+            color: $white;
+            span {
+                padding: .45rem .5rem;
+                display: inline-block;
+                background-color: rgba($tappan-red, 1);
+                position: relative;
+            }
+            .tag_department {
+                margin-right: .55rem;
+                text-transform: uppercase;
+                &:after {
+                    content: '';
+                    border-top: 32px solid rgba($tappan-red, 1);
+                    border-bottom: 5px solid transparent;
+                    border-left: 0px solid transparent;
+                    border-right: 5px solid transparent;
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                }
+            }
+            .tag_decade {
+                &:before {
+                    content: '';
+                    border-top: 5px solid transparent;
+                    border-bottom: 33px solid rgba($tappan-red, 1);
+                    border-left: 5px solid transparent;
+                    border-right: 0px solid rgba($tappan-red, 1);
+                    position: absolute;
+                    top: -5px;
+                    left: -5px;
+                }
+            }
+        }
+    }
+    .hed {
+        font-family: 'bebas_neuebold';
+        font-size: 5rem;
+        line-height: 1;
+    }
+    .subhed {
+        font-size: 1.5rem;
+    }
+    .byline {
+        font-style: italic;
+    }
+    .subheader {
+        color: $black;
+        font-family: 'Open Sans';
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+    }
+    .sharing {
+        font-family: 'Open Sans';
+        font-weight: 900;
+        font-variant: small-caps;
+        margin: 1.5rem 0;
+        padding: 1rem 0;
+        border-top: 1px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
+        color: $dark-gray;
+        a {
+            color: $dark-gray;
+            margin-right: .9rem;
+            &:hover {
+                color: $black-87;
+            }
+            &:first-child {
+                margin-left: .9rem;
+            }
+        }
+    }
+    blockquote {
+        font-family: 'bebas_neuebold';
+        font-size: 3rem;
+        line-height: 1;
+        border: 0;
+        color: $black-100;
+        &:before,
+        &:after {
+            font-family: 'bebas_neuebold';
+            content: '"';
+        }
+        &:before {
+            display: inline-block;
+            margin-left: -15px;
+        }
+    }
+}

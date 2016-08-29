@@ -1,0 +1,14 @@
+<div class="events" id="content">
+    <section class="row expanded category">
+        <div class="large-12 medium-12 columns">
+            <h5>Events</h5>
+        </div>
+    </section>
+    <section class="row expanded content_sidebar">
+        <div class="small-12 medium-11 large-11 large-centered row">
+            <div class="small-12 medium-3 large-3 columns side_bar">{{> recent}}</div>
+            <div class="small-12 medium-8 large-8 columns content_listing">{{#repeat 6}} {{> events_list_item}} {{/repeat}}</div>
+        </div>
+    </section>
+    {{> social}}
+</div>

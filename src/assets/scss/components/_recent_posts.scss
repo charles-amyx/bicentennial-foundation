@@ -23,6 +23,7 @@
         }
         a {
             color: $white;
+            display: block;
             &:hover {
                 color: darken($michigan-maize, 5%);
             }
