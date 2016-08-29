@@ -1,19 +1,14 @@
-// Recent Posts side bar
-.recent_posts {
+// Recent events side bar
+.events_sidebar {
     padding: $global-padding;
-    background: rgb(59, 89, 152);
-    background: -moz-linear-gradient(top, rgba(59, 89, 152, 1) 0%, rgba(10, 15, 26, 1) 75%);
-    background: -webkit-linear-gradient(top, rgba(59, 89, 152, 1) 0%, rgba(10, 15, 26, 1) 75%);
-    background: linear-gradient(to bottom, rgba(59, 89, 152, 1) 0%, rgba(10, 15, 26, 1) 75%);
+    background: $arboretum-blue;
+    margin: 3rem 0;
     .label {
         font-family: 'bebas_neuebold';
         font-size: 1.75rem;
-        color: rgba(59, 89, 152, 1);
+        color: $white;
     }
-    .lead {
-        font-weight: 900;
-    }
-    .recent {
+    .recent_event {
         margin-top: 1.5rem;
         padding-bottom: 1.5rem;
         border-bottom: 1px solid rgba($light-gray, .45);
@@ -26,6 +21,13 @@
             &:hover {
                 color: darken($michigan-maize, 5%);
             }
+        }
+        p {
+            margin-bottom: 0;
+        }
+        .event_title {
+            font-size: 1.2rem;
+            font-weight: bold;
         }
     }
 }

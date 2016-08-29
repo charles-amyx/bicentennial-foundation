@@ -1,0 +1,41 @@
+// Recent Posts side bar
+.content_listing {
+    .row {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px dashed $light-gray;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    .secondary_tags {
+        font-family: 'Open Sans';
+        font-size: .75rem;
+        font-weight: 900;
+        margin-bottom: 0;
+        color: $tappan-red;
+        a {
+            color: $tappan-red;
+            &:hover {
+                color: darken($tappan-red, 15%)
+            }
+        }
+        .secondary_tag_department {
+            text-transform: uppercase;
+            a {
+                color: $tappan-red;
+            }
+        }
+    }
+    .hed {
+        font-family: 'bebas_neuebold';
+        font-size: 2rem;
+        line-height: 1;
+        a {
+            color: $black;
+            &:hover {
+                color: $black-100;
+            }
+        }
+    }
+}

@@ -6,13 +6,13 @@
                 {{#repeat 2}} {{> two_column_items}} {{/repeat}}
             </div>
             <div class="row small-up-1 medium-up-2 large-up-4" data-equalizer data-equalize-by-row="true">
-                {{#repeat 4}} {{> card}} {{/repeat}} {{#repeat 4}} {{> card}} {{/repeat}}
+                {{#repeat 4}} {{> card}} {{/repeat}}
             </div>
         </div>
     </section>
     <section class="row expanded content_sidebar">
         <div class="small-12 medium-11 large-11 large-centered row">
-            <div class="small-12 medium-3 large-3 columns side_bar">{{> recent}}</div>
+            <div class="small-12 medium-3 large-3 columns side_bar">{{> recent}} {{> events_sidebar}}</div>
             <div class="small-12 medium-8 large-8 columns content_listing">{{#repeat 5}} {{> content_list_item}} {{/repeat}}</div>
         </div>
     </section>

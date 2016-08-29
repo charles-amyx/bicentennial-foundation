@@ -172,6 +172,9 @@ $-zf-flex-classes-imported: false;
             -moz-osx-font-smoothing: grayscale;
         }
     }
+    a {
+        transition: color .3s ease-in-out;
+    }
     img {
         // Grid defaults to get images and embeds to work properly
         max-width: 100%;
@@ -592,6 +595,10 @@ $-zf-flex-classes-imported: false;
     }
 }
 
+a {
+    transition: color .3s ease-in-out;
+}
+
 
 /* Custom Collapse
      ========================================================================== */
@@ -773,7 +780,7 @@ $-zf-flex-classes-imported: false;
                 position: absolute;
                 bottom: 0px;
                 @include breakpoint(small only) {
-                position: initial;
+                    position: initial;
                 }
             }
         }
