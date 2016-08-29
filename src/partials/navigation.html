@@ -8,13 +8,13 @@
             </div>
             <div class="medium-8 large-8 column main_menu disable-selection" data-toggle="main-menu">
                 <div class="row ">
-                    <div class="medium-3 large-3 column show-for-large category">
-                        <div class="web_header">Bicentennial Web Project</div>
+                    <div class="medium-3 large-3 column show-for-medium category">
+                        <div {{#ifpage 'index'}}class="is-active web_header"{{/ifpage}} class="web_header">Bicentennial Web Project</div>
                     </div>
-                    <div class="medium-2 large-2 column show-for-medium show-for-large category"><span class="">Story Type</span></div>
-                    <div class="medium-2 large-2 column show-for-medium show-for-large category"><span class="">Time Travel</span></div>
-                    <div class="medium-3 large-3 column show-for-medium show-for-large category"><span class="">Subject Areas</span></div>
-                    <div class="medium-2 large-2 column show-for-medium show-for-large category"><span class="">Upcoming</span></div>
+                    <div {{#ifpage 'story-type'}}class="is-active medium-2 large-2 column show-for-large category"{{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Story Type</span></div>
+                    <div {{#ifpage 'decades'}}class="is-active medium-2 large-2 column show-for-large category"{{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Time Travel</span></div>
+                    <div {{#ifpage 'areas'}}class="is-active medium-3 large-3 column show-for-large category"{{/ifpage}} class="medium-3 large-3 column show-for-large category"><span class="">Subject Areas</span></div>
+                    <div {{#ifpage 'upcoming'}}class="is-active medium-2 large-2 column show-for-large category"{{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Upcoming</span></div>
                 </div>
             </div>
         </div>
@@ -130,6 +130,9 @@
                     <div class="small-6 medium-3 large-2 column sub_categories">
                         <ul class="">
                             <li class="hide-for-large">Upcoming</li>
+                            <li class="item all-link">
+                                <a href="{{root}}decades.html">see all <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </li>
                             <li class="item">
                                 <a href="#">Events</a>
                             </li>
