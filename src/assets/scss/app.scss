@@ -2,7 +2,7 @@
 @import 'settings';
 @import 'global';
 @import 'foundation';
-// @import 'motion-ui';
+@import 'motion-ui';
 // Material Design - Core
 @import "core/material",
 "core/animate";
@@ -73,5 +73,5 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 // @include foundation-flex-classes;
-// @include motion-ui-transitions;
-// @include motion-ui-animations;
+@include motion-ui-transitions;
+@include motion-ui-animations;
