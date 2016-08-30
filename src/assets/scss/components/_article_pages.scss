@@ -113,8 +113,44 @@
             margin-left: -15px;
         }
     }
+    .article_image {
+        height: 100%;
+        position: relative;
+        .expand {
+            position: absolute;
+            display: inline;
+            top: 0;
+            left: 0;
+            .expand_background {
+                background-color: rgba($tappan-red, .85);
+                width: 33px;
+                height: 33px;
+            }
+        }
+    }
 }
 
 .orbit-container {
     min-height: 80vh !important;
+    li.orbit-slide {
+        max-height: 80vh !important;
+        img.orbit-image {
+            height: 80vh;
+            width: auto;
+        }
+    }
+    .orbit-caption {
+        background: none !important;
+        position: static;
+        color: $white;
+        .orbit-hed {
+            font-family: 'bebas_neuebold';
+            font-size: 3rem;
+            line-height: 1;
+        }
+    }
+}
+
+.reveal {
+    background-color: rgba($black-100, .9) !important;
 }
