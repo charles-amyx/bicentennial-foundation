@@ -1,6 +1,9 @@
 // Articles
 .article {
     margin-top: 4rem;
+    .article_content {
+        margin-bottom: 4rem;
+    }
     .article_side {
         margin-top: 4rem;
         .sticky-container {

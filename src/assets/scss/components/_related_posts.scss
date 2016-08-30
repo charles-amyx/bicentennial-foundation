@@ -17,10 +17,17 @@
         &.red {
             border-left: 1px solid $white;
             border-right: 1px solid $white;
+            @include breakpoint(medium down) {
+                border-left: 0;
+                border-right: 0;
+            }
         }
     }
     .hed {
-        font-size: 4rem !important;
+        font-size: 4rem;
+        @include breakpoint(medium down) {
+            font-size: 3rem !important;
+        }
     }
     a {
         color: $white;
