@@ -9,6 +9,10 @@
     <title>Michigan Engineering | Bicentennial</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <script src="https://use.fontawesome.com/771dfba98b.js"></script>
+    {{#ifpage 'decades'}}
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    {{/ifpage}}
 </head>
 
 <body> {{> navigation}} {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> body}} {{> footer}}
@@ -21,11 +25,14 @@ $('.title-bar').on('sticky.zf.stuckto:top', function() {
     $(this).removeClass('shrink');
 });
 </script>
+{{#ifpage 'index'}}
 <script>
 $(document).ready(function() {
     $('#my-video').backgroundVideo();
 
 });
 </script>
+{{/ifpage}}
+
 
 </html>
