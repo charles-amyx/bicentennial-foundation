@@ -659,7 +659,9 @@ a {
 
 .decades,
 .types,
-.subject-areas {
+.areas,
+.events,
+.article {
     margin-top: 3rem;
     @include breakpoint(small only) {
         margin-top: .5rem;
@@ -941,4 +943,12 @@ a {
             }
         }
     }
+}
+
+// Timeline
+// -----------
+//
+//
+.tl-menubar {
+    z-index: 10 !important;
 }

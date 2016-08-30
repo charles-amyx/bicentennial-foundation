@@ -1,5 +1,6 @@
 // Recent Posts side bar
 .related_posts {
+    border-bottom: 1px solid $white;
     .large-4 {
         position: relative;
     }
@@ -10,8 +11,12 @@
         height: 100%;
         cursor: pointer;
         &:hover {
-            opacity: .8;
-            transition: opacity .35s ease-in-out;
+            opacity: .85;
+            transition: all .35s ease-in-out;
+        }
+        &.red {
+            border-left: 1px solid $white;
+            border-right: 1px solid $white;
         }
     }
     .hed {
@@ -25,7 +30,7 @@
         bottom: -25%;
         position: relative;
         &:hover {
-            color: darken($white, 10%);
+            color: $white-100;
         }
     }
 }

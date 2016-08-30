@@ -38,7 +38,7 @@ div.home {
             position: relative;
         }
         &.tablet-adjust {
-            @include breakpoint(medium down) {
+            @include breakpoint(medium only) {
                 height: 25vh;
             }
         }

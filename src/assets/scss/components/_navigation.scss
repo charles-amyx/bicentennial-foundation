@@ -58,6 +58,7 @@
                 padding: 0 0 3rem !important;
                 overflow: visible;
                 transition: all .15s ease;
+                z-index: 12 !important;
                 @include breakpoint(medium down) {
                     max-height: 100vh !important;
                     overflow: scroll !important;
