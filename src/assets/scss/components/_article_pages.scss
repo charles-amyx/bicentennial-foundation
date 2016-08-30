@@ -130,27 +130,71 @@
     }
 }
 
-.orbit-container {
-    min-height: 80vh !important;
-    li.orbit-slide {
-        max-height: 80vh !important;
-        img.orbit-image {
-            height: 80vh;
-            width: auto;
+.orbit {
+    .orbit-container {
+        min-height: 80vh !important;
+        li.orbit-slide {
+            max-height: 80vh !important;
+            img.orbit-image {
+                height: 80vh;
+                width: auto;
+            }
+        }
+        .orbit-caption {
+            background: none !important;
+            position: static;
+            color: $white;
+            .orbit-hed {
+                font-family: 'bebas_neuebold';
+                font-size: 3rem;
+                line-height: 1;
+            }
         }
     }
-    .orbit-caption {
-        background: none !important;
-        position: static;
-        color: $white;
-        .orbit-hed {
-            font-family: 'bebas_neuebold';
-            font-size: 3rem;
-            line-height: 1;
+    .orbit-bullets button {
+        width: .9rem !important;
+        height: .9rem !important;
+        margin: 0.25rem !important;
+        background-color: $white !important;
+        &.is-active {
+            background-color: $tappan-red !important;
+        }
+        &:hover {
+            background-color: $tappan-red !important;
+            transition: all .3s ease-in-out;
+        }
+    }
+    .sharing {
+        font-family: 'Open Sans';
+        font-weight: 900;
+        font-variant: small-caps;
+        margin: 1.5rem 0;
+        padding: 1rem 0;
+        border-top: 1px solid rgba($light-gray, .5);
+        border-bottom: 1px solid rgba($light-gray, .5);
+        color: $white-87;
+        a {
+            color: $white-87;
+            margin-right: .9rem;
+            &:hover {
+                color: $white-100;
+            }
+            &:first-child {
+                margin-left: .9rem;
+            }
         }
     }
 }
 
 .reveal {
-    background-color: rgba($black-100, .9) !important;
+    background-color: rgba($black-100, .97) !important;
+    .close-button {
+        color: $white-87 !important;
+        font-size: 3rem !important;
+        font-weight: bold;
+        &:hover {
+            color: $tappan-red !important;
+            transition: all .3s ease-in-out;
+        }
+    }
 }
