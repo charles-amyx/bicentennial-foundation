@@ -1,3 +1,5 @@
+    // Custom iPad mixin
+    $tablet: 1024px 1025px;
     // Skip link
     #skip a {
         position: absolute;
@@ -59,6 +61,15 @@
                 overflow: visible;
                 transition: all .15s ease;
                 z-index: 12 !important;
+                .bicent-brand {
+                    img {
+                        margin-top: 1rem;
+                    }
+                    .tagline {
+                        font-family: "Droid Serif";
+                        font-size: .75rem;
+                    }
+                }
                 @include breakpoint(medium down) {
                     max-height: 100vh !important;
                     overflow: scroll !important;
@@ -183,10 +194,8 @@
                     &.is-active {
                         color: $michigan-maize;
                     }
-                    @include breakpoint(medium down) {
-                        font-size: 1.25rem;
-                        bottom: 5px;
-                        left: 30%;
+                    @include breakpoint($tablet) {
+                        font-size: 1.2rem;
                     }
                 }
                 @include breakpoint(medium down) {
@@ -252,7 +261,6 @@
                 padding: .55rem;
                 margin-top: .5rem;
                 border-radius: 0;
-                width: 33.333%;
                 cursor: pointer;
                 background-color: rgba($light-gray, .1);
                 &:hover {

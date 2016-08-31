@@ -1,5 +1,5 @@
 <div id="skip"><a href="#content">Skip to Main Content</a></div>
-<div class="navigation" data-sticky-container>
+<div class="navigation wow fadeIn" data-wow-delay=".35s" data-sticky-container>
     <div class="title-bar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
         <div class="row bottom expanded collapse">
             <div class="title-bar-title medium-4 large-4 column">
@@ -9,52 +9,56 @@
             <div class="medium-8 large-8 column main_menu disable-selection" data-toggle="main-menu">
                 <div class="row ">
                     <div class="medium-3 large-3 column show-for-medium category">
-                        <div {{#ifpage 'index'}}class="is-active web_header"{{/ifpage}} class="web_header">Bicentennial Web Project</div>
+                        <div {{#ifpage 'index'}}class="is-active web_header" {{/ifpage}} class="web_header">Bicentennial Web Project</div>
                     </div>
-                    <div {{#ifpage 'story-type'}}class="is-active medium-2 large-2 column show-for-large category"{{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Story Type</span></div>
-                    <div {{#ifpage 'decades'}}class="is-active medium-2 large-2 column show-for-large category"{{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Time Travel</span></div>
-                    <div {{#ifpage 'subject-areas'}}class="is-active medium-3 large-3 column show-for-large category"{{/ifpage}} class="medium-3 large-3 column show-for-large category"><span class="">Subject Areas</span></div>
-                    <div {{#ifpage 'events'}}class="is-active medium-2 large-2 column show-for-large category"{{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Upcoming</span></div>
+                    <div {{#ifpage 'story-type'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Story Type</span></div>
+                    <div {{#ifpage 'decades'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Time Travel</span></div>
+                    <div {{#ifpage 'subject-areas'}}class="is-active medium-3 large-3 column show-for-large category" {{/ifpage}} class="medium-3 large-3 column show-for-large category"><span class="">Subject Areas</span></div>
+                    <div {{#ifpage 'events'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Upcoming</span></div>
                 </div>
             </div>
         </div>
         <div class="dropdown-pane row expanded large-collapse menu" id="main-menu" data-dropdown data-sticky data-close-on-click="true">
-            <div class="small-12 medium-12 large-4 show-for-medium show-for-large column search">
-                <label>Search Term
-                    <input type="text">
-                </label>
-                <label>Subject Areas
-                    <select>
-                        <option value="" selected disabled>Select Subject Area</option>
-                        <option value="aero">Aerospace</option>
-                        <option value="bme">Biomedical</option>
-                        <option value="che">Chemical</option>
-                        <option value="civil">Civil and Environmental</option>
-                        <option value="climate">Climate and Space</option>
-                        <option value="cs">Computer Science</option>
-                        <option value="ec">Electrical and Computer</option>
-                        <option value="me">Materials Science</option>
-                        <option value="mech">Mechanical</option>
-                        <option value="md">Multidisciplinary</option>
-                        <option value="name">Naval Arch and Marine</option>
-                        <option value="nukerad">Nuclear and Radiological</option>
-                    </select>
-                </label>
-                <label>Topics
-                    <select>
-                        <option value="" selected disabled>Topics</option>
-                        <option value="impact">Impact</option>
-                        <option value="legends">Legends</option>
-                        <option value="experience">Experience</option>
-                        <option value="on-the-move">On the move</option>
-                        <option value="quirky">Quirky</option>
-                    </select>
-                </label>
-                <input type="submit" class="button waves-effect waves-light" value="Search">
+            <div class="small-12 medium-12 large-4 show-for-medium show-for-large column bicent-brand">
+                <div class="row">
+                    <div class="large-6 large-centered"><img src="./assets/img/Bicentennial-Mark-solid-white-no-tagline.svg" alt="College of Engineering | University of Michigan"></div>
+                </div>
+                <div class="row text-center"><span class="tagline"><em>Always Leading. Forever Valiant.</em></span></div>
             </div>
             <div class="small-12 medium-12 large-8 column">
                 <div class="row ">
-                    <div class="small-12 medium-1 large-3 column hide-for-medium-down show-for-large"><span class="invisible">Bicentennial Web Project</span>
+                    <div class="small-12 medium-1 large-3 column hide-for-medium-down show-for-large search">
+                        <label>Search Term
+                            <input type="text">
+                        </label>
+                        <label>Subject Areas
+                            <select>
+                                <option value="" selected disabled>Select Subject Area</option>
+                                <option value="aero">Aerospace</option>
+                                <option value="bme">Biomedical</option>
+                                <option value="che">Chemical</option>
+                                <option value="civil">Civil and Environmental</option>
+                                <option value="climate">Climate and Space</option>
+                                <option value="cs">Computer Science</option>
+                                <option value="ec">Electrical and Computer</option>
+                                <option value="me">Materials Science</option>
+                                <option value="mech">Mechanical</option>
+                                <option value="md">Multidisciplinary</option>
+                                <option value="name">Naval Arch and Marine</option>
+                                <option value="nukerad">Nuclear and Radiological</option>
+                            </select>
+                        </label>
+                        <label>Topics
+                            <select>
+                                <option value="" selected disabled>Topics</option>
+                                <option value="impact">Impact</option>
+                                <option value="legends">Legends</option>
+                                <option value="experience">Experience</option>
+                                <option value="on-the-move">On the move</option>
+                                <option value="quirky">Quirky</option>
+                            </select>
+                        </label>
+                        <input type="submit" class="button waves-effect waves-light" value="Search">
                     </div>
                     <div class="small-6 medium-3 large-2 column sub_categories">
                         <ul class="">

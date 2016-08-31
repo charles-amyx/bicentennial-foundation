@@ -1,28 +1,34 @@
+---
+title: Bicentennial Home | Michigan Engineering
+description: This is the page description for the purposes of SEO 
+---
 <div class="home" id="content">
     <!--Lead Row-->
-    <section class="row feature_row expanded small-collapse medium-collapse large-collapse wow fadeIn" data-wow-delay=".5s">
+    <section class="row feature_row expanded small-collapse medium-collapse large-collapse wow fadeIn" data-wow-delay=".85s">
         {{> lead_row}}
     </section>
     <!--Engin Disp Row-->
-    <section class="row expanded category wow fadeInUp">
-            <h5>Subject Areas</h5>
-            <div class="row medium-collapse large-collapse">
-                {{#repeat 2}} {{> two_column_items}} {{/repeat}}
-            </div>
-            <div class="row small-up-1 medium-up-2 large-up-4" data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
-                {{#repeat 3}} {{> card}} {{/repeat}}
-                <div class="columns">
-                    <div class="category_secondary_feature category_link light-blue card wow fadeInUp" data-wow-delay=".5s" data-equalizer-watch>
-                        <div class="card-action large_action white-text">
-                            <a href="{{root}}/subject-areas.html"><span class="bottom"><span class="thin-text">see all</span><br>subject areas »</span></a>
-                        </div>
+    <section class="row expanded category wow fadeInUp" data-wow-delay=".5s">
+        <h5>Subject Areas</h5>
+        <div class="row medium-collapse large-collapse">
+            {{#repeat 2}} {{> two_column_items}} {{/repeat}}
+        </div>
+        <div class="row small-up-1 medium-up-2 large-up-4 small-collapse medium-uncollapse large-uncollapse" data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
+            {{#repeat 3}} {{> card}} {{/repeat}}
+            <div class="columns">
+                <div class="category_secondary_feature category_link light-blue card wow fadeInUp" data-wow-delay=".5s" data-equalizer-watch>
+                    <div class="card-action large_action white-text">
+                        <a href="{{root}}/subject-areas.html"><span class="bottom"><span class="thin-text">see all</span><br>subject areas »</span></a>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
-    <section class="video_wrap row expanded full_width_feature video wow fadeInUp" data-wow-delay=".5s"">
+    <section class="video_wrap row expanded full_width_feature video wow fadeInUp" data-wow-delay=".5s">
         <video id="my-video" preload="metadata" autoplay loop>
             <source src="https://archive.org/download/Starry_Sky_Time_Lapse/Stars%20H264.mp4" type="video/mp4">
+                <img src="./assets/img/lead.jpg" title="Your browser does not support the <video> tag">
+
         </video>
         <div class="full_width_feature_overlay">
             <hr>
@@ -33,18 +39,16 @@
     </section>
     {{> social}}
     <section class="row expanded category wow fadeInUp">
-        <div class="large-12 medium-12 columns">
-            <h5>Time Travel</h5>
-            <div class="row medium-collapse large-collapse">
-                {{#repeat 2}} {{> two_column_items}} {{/repeat}}
-            </div>
-            <div class="row small-up-1 medium-up-2 large-up-4" data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
-                {{#repeat 3}} {{> card}} {{/repeat}}
-                <div class="columns">
-                    <div class="category_secondary_feature category_link red card wow fadeInUp" data-wow-delay=".5s" data-equalizer-watch>
-                        <div class="card-action large_action white-text">
-                            <a href="{{root}}/decades.html"><span class="bottom"><span class="thin-text">see all</span><br>time travel stories »</span></a>
-                        </div>
+        <h5>Time Travel</h5>
+        <div class="row medium-collapse large-collapse">
+            {{#repeat 2}} {{> two_column_items}} {{/repeat}}
+        </div>
+        <div class="row small-up-1 medium-up-2 large-up-4 small-collapse medium-uncollapse large-uncollapse" data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
+            {{#repeat 3}} {{> card}} {{/repeat}}
+            <div class="columns">
+                <div class="category_secondary_feature category_link red card wow fadeInUp" data-wow-delay=".5s" data-equalizer-watch>
+                    <div class="card-action large_action white-text">
+                        <a href="{{root}}/decades.html"><span class="bottom"><span class="thin-text">see all</span><br>time travel stories »</span></a>
                     </div>
                 </div>
             </div>
@@ -52,18 +56,16 @@
     </section>
     {{> old_school_cool}}
     <section class="row expanded category wow fadeInUp">
-        <div class="large-12 medium-12 columns">
-            <h5>Story Types</h5>
-            <div class="row medium-collapse large-collapse">
-                {{#repeat 2}} {{> two_column_items}} {{/repeat}}
-            </div>
-            <div class="row small-up-1 medium-up-2 large-up-4" data-equalizer data-equalize-by-row="true">
-                {{#repeat 3}} {{> card}} {{/repeat}}
-                <div class="columns">
-                    <div class="category_secondary_feature category_link blue card wow fadeInUp" data-wow-delay=".5s" data-equalizer-watch>
-                        <div class="card-action large_action white-text">
-                            <a href="{{root}}/story-type.html"><span class="bottom"><span class="thin-text">see all</span><br>story types »</span></a>
-                        </div>
+        <h5>Story Types</h5>
+        <div class="row medium-collapse large-collapse">
+            {{#repeat 2}} {{> two_column_items}} {{/repeat}}
+        </div>
+        <div class="row small-up-1 medium-up-2 large-up-4 small-collapse medium-uncollapse large-uncollapse" data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
+            {{#repeat 3}} {{> card}} {{/repeat}}
+            <div class="columns">
+                <div class="category_secondary_feature category_link blue card wow fadeInUp" data-wow-delay=".5s" data-equalizer-watch>
+                    <div class="card-action large_action white-text">
+                        <a href="{{root}}/story-type.html"><span class="bottom"><span class="thin-text">see all</span><br>story types »</span></a>
                     </div>
                 </div>
             </div>

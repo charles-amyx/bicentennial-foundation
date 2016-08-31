@@ -634,16 +634,17 @@ a {
         margin-right: 5px;
     }
     &:after {
-        @include breakpoint(medium down) {
-            display: none;
-        }
         content: '';
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAKElEQVQIW2NkwA7SGLGIpzEwMMxClwALghQjS8AFkSVQBGESGIIgCQBj3gVtRbJUtQAAAABJRU5ErkJggg==) repeat;
         height: 6px;
-        width: 83.5%;
+        width: 100%;
         display: inline-block;
-        float: right;
+        position: absolute;
         margin-top: 35px;
+        margin-left: 10px;
+        @include breakpoint(medium down) {
+            display: none;
+        }
     }
 }
 
@@ -673,10 +674,10 @@ a {
 //
 //
 .category_feature {
-    height: 32vh;
+    height: 40vh;
     overflow: hidden;
     position: relative;
-    background-color: $medium-gray;
+    background-color: $black-100;
     img {
         width: 100%;
     }
@@ -684,7 +685,7 @@ a {
         margin: auto;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 1.5rem;
         right: 0;
         a {
             background-color: rgba(0, 0, 0, .75);
@@ -698,6 +699,16 @@ a {
                 color: $white;
                 background-color: rgba(0, 0, 0, 1);
                 transition: background-color .3s ease-in-out;
+            }
+            @include breakpoint(medium down) {
+                background-color: rgba(255, 255, 255, 1);
+                color: $black;
+                border-left: 1px solid $light-gray;
+                border-right: 1px solid $light-gray;
+                border-bottom: 1px solid $light-gray;
+                &:hover {
+                    color: $arboretum-blue;
+                }
             }
         }
         .secondary_tags {
@@ -717,6 +728,10 @@ a {
             margin-bottom: 0;
         }
     }
+    @include breakpoint(medium down) {
+        background-color: rgba(255, 255, 255, 1);
+        bottom: 0;
+    }
 }
 
 //  Cards 
@@ -729,7 +744,8 @@ a {
         font-size: .75rem;
         font-weight: 900;
         color: $tappan-red;
-        padding-left: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         padding-top: .5rem;
         margin-bottom: 0;
         .secondary_tag_department {
@@ -753,7 +769,8 @@ a {
     }
     .card-title {
         font-family: 'bebas_neuebold';
-        margin: -10px 0 0;
+        line-height: 1;
+        padding: 0 1rem 1rem !important;
         a {
             color: $black;
             &:hover {
