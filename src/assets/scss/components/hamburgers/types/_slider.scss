@@ -1,7 +1,4 @@
 @if index($hamburger-types, slider) {
-    /*
-   * Slider
-   */
     .hamburger--slider {
         .hamburger-inner {
             top: $hamburger-layer-height / 2;
@@ -26,7 +23,7 @@
                 }
                 &::after {
                     transform: translate3d(0, $y-offset * -2, 0) rotate(-90deg);
-                background-color: lighten($tappan-red, 3%);
+                    background-color: lighten($tappan-red, 3%);
                 }
             }
         }
