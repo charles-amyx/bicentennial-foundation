@@ -601,7 +601,7 @@ a {
         @include breakpoint(medium only) {
             width: 45%;
         }
-        @include breakpoint(small) {
+        @include breakpoint(small only) {
             display: none;
         }
     }
