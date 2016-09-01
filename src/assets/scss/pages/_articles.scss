@@ -25,7 +25,7 @@
                     opacity: 0;
                 }
                 &.is-stuck.is-at-top {
-                    top: 5rem;
+                    top: 5rem !important;
                     opacity: 1;
                     transition: opacity .3s ease-in-out;
                 }
