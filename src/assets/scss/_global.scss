@@ -695,6 +695,9 @@ a {
         left: 0;
         bottom: 1.5rem;
         right: 0;
+        @include breakpoint(medium only) {
+            position: static;
+        }
         @include breakpoint(small only) {
             position: static;
         }
@@ -714,8 +717,6 @@ a {
             @include breakpoint(medium only) {
                 background-color: $white;
                 color: $black;
-                border-left: 1px solid $light-gray;
-                border-right: 1px solid $light-gray;
                 border-bottom: 1px solid $light-gray;
                 &:hover {
                     background-color: $white;
