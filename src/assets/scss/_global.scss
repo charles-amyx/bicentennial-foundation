@@ -615,7 +615,6 @@ a {
 //  -------------------------
 //
 //
-
 .row.category,
 .full_width_feature {
     margin-bottom: 2.5rem;
@@ -643,9 +642,6 @@ a {
         position: absolute;
         margin-top: 35px;
         margin-left: 10px;
-        @include breakpoint(medium down) {
-            display: none;
-        }
     }
 }
 
@@ -763,7 +759,7 @@ a {
         color: $tappan-red;
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: .5rem;
+        padding-top: .75rem;
         margin-bottom: 0;
         .secondary_tag_department {
             text-transform: uppercase;
