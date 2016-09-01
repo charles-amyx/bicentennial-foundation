@@ -1,8 +1,10 @@
 // Related Posts row
 .related_posts {
     border-bottom: 1px solid $white;
-    .large-4 {
+    .related_item {
         position: relative;
+        height: 33vw;
+        overflow: hidden;
     }
     .overlay {
         padding: $global-padding;
