@@ -678,6 +678,10 @@ a {
     overflow: hidden;
     position: relative;
     background-color: $black-100;
+    @include breakpoint(small) {
+      height: auto;
+      margin-bottom: 3rem;
+    }
     img {
         width: 100%;
     }
@@ -687,6 +691,9 @@ a {
         left: 0;
         bottom: 1.5rem;
         right: 0;
+        @include breakpoint(small) {
+            position: static;
+        }
         a {
             background-color: rgba(0, 0, 0, .75);
             display: block;
@@ -700,14 +707,22 @@ a {
                 background-color: rgba(0, 0, 0, 1);
                 transition: background-color .3s ease-in-out;
             }
-            @include breakpoint(medium down) {
-                background-color: rgba(255, 255, 255, 1);
+            @include breakpoint(medium only) {
+                background-color: $white;
                 color: $black;
                 border-left: 1px solid $light-gray;
                 border-right: 1px solid $light-gray;
                 border-bottom: 1px solid $light-gray;
                 &:hover {
-                    color: $arboretum-blue;
+                    background-color: $white;
+                }
+            }
+            @include breakpoint(small) {
+                background-color: $white;
+                border: 0;
+                color: $black;
+                &:hover {
+                    background-color: $white;
                 }
             }
         }

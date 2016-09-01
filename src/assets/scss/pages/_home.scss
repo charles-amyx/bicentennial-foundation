@@ -51,7 +51,7 @@ div.home {
         position: absolute;
         top: 50%;
         &.tablet-overlay-adjust {
-            @include breakpoint(medium down) {
+            @include breakpoint(medium only) {
                 top: 20%;
             }
         }
@@ -101,6 +101,9 @@ div.home {
             font-family: 'bebas_neuebold';
             font-size: 4rem;
             line-height: .9;
+            @include breakpoint(small) {
+                font-size: 2.2rem;
+            }
         }
     }
     //  Full Width Parallax

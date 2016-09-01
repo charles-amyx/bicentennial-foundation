@@ -1,6 +1,11 @@
 // Related Posts row
 .related_posts {
     border-bottom: 1px solid $white;
+    h6 {
+        font-family: 'bebas_neuebold';
+        font-size: 1.25rem;
+        padding: 0 0 0 .75rem;
+    }
     .related_item {
         position: relative;
         height: 33vw;
@@ -26,9 +31,14 @@
         }
     }
     .hed {
+        font-family: 'bebas_neuebold';
         font-size: 4rem;
-        @include breakpoint(medium down) {
-            font-size: 3rem !important;
+        line-height: 1;
+        @include breakpoint(medium only) {
+            font-size: 2.5rem !important;
+        }
+        @include breakpoint (small) {
+            font-size: 1.25rem !important;
         }
     }
     a {
