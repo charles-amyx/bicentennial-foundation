@@ -82,37 +82,4 @@ $white: #fefefe;
 $gray-blue: #2f4a69;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Droid Serif',
-Georgia,
-serif;
-$body-antialiased: true;
-$global-margin: 1rem;
-$global-padding: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
-$global-radius: 0;
-$global-text-direction: ltr;
-$global-flexbox: false;
-$print-transparent-backgrounds: true;
-// Social
-$twitter: #00aced !default;
-$facebook: #3b5998 !default;
-$googleplus: #dd4b39 !default;
-$pinterest: #cb2027 !default;
-$linkedin: #007bb6 !default;
-$youtube: #bb0000 !default;
-$vimeo: #aad450 !default;
-$tumblr: #32506d !default;
-$instagram: #517fa4 !default;
-$flickr: #ff0084 !default;
-// Michigan Brand Colors
-$michigan-blue: #00274c;
-$michigan-maize: #ffcb05;
-$tappan-red: #9a3324;
-$arboretum-blue: #407ec9;
-$ross-orange: #d86018;
-$taubman-teal: #00b2a9;
-$wave-field-green: #ada400;
-$a2-amethyst: #702082;
-$gold: #886b01;
-@include add-foundation-colors;
+
