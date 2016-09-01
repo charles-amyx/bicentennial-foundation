@@ -37,7 +37,7 @@
         @include breakpoint(medium only) {
             font-size: 2.5rem !important;
         }
-        @include breakpoint (small) {
+        @include breakpoint (small only) {
             font-size: 1.25rem !important;
         }
     }
