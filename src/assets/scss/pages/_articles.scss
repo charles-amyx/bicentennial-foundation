@@ -3,9 +3,21 @@
     margin-top: 4rem;
     .article_content {
         margin-bottom: 4rem;
+        @include breakpoint(small only) {
+            margin-bottom: 1rem;
+        }
+        p {
+            @include breakpoint(small only) {
+                padding-left: 0.625rem;
+                padding-right: 0.625rem;
+            }
+        }
     }
     .article_side {
-        margin-top: 4rem;
+        margin-top: 3rem;
+        @include breakpoint(small only) {
+            margin-top: 0rem;
+        }
         .sticky-container {
             .sticky {
                 transition: opacity .3s ease-in-out;
@@ -13,7 +25,7 @@
                     opacity: 0;
                 }
                 &.is-stuck.is-at-top {
-                    top: 5rem !important;
+                    top: 5rem;
                     opacity: 1;
                     transition: opacity .3s ease-in-out;
                 }
@@ -62,13 +74,21 @@
             }
         }
     }
-    .hed {
+    .headline {
         font-family: 'bebas_neuebold';
         font-size: 5rem;
         line-height: 1;
+        @include breakpoint(small only) {
+            font-size: 3.5rem;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+        }
     }
     .subhed {
         font-size: 1.5rem;
+        @include breakpoint(small only) {
+            font-size: 1.25rem;
+        }
     }
     .byline {
         font-style: italic;
