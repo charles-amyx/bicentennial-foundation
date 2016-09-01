@@ -642,6 +642,12 @@ a {
         position: absolute;
         margin-top: 35px;
         margin-left: 10px;
+        @include breakpoint(medium only) {
+          width: 45%;
+        }
+        @include breakpoint(small) {
+          display: none;
+        }
     }
 }
 
@@ -721,6 +727,7 @@ a {
                 color: $black;
                 &:hover {
                     background-color: $white;
+                    color: $black;
                 }
             }
         }
