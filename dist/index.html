@@ -40,12 +40,12 @@
         <div class="row bottom expanded collapse">
             <div class="title-bar-title medium-4 large-4 column">
                 <button class="hamburger hamburger--slider" type="button" data-toggle="main-menu" data-hide-for="large"><span class="hamburger-box"><span class="hamburger-inner"></span></button>
-                <a class="logo" href="./"><img src="./assets/img/CoE-horiz-rev.svg" alt="College of Engineering | University of Michigan"></a>
+                <a class="logo" href="./"><img src="./assets/img/CoE-BICENT-horiz-rev.svg" alt="College of Engineering | University of Michigan"></a>
             </div>
             <div class="medium-8 large-8 column main_menu disable-selection" data-toggle="main-menu">
                 <div class="row ">
                     <div class="medium-3 large-3 column show-for-medium category">
-                        <div class="is-active web_header"  class="web_header">Bicentennial Web Project</div>
+                        <div class="web_header invisible">Bicentennial Web Project</div>
                     </div>
                     <div  class="medium-2 large-2 column show-for-large category"><span class="">Story Type</span></div>
                     <div  class="medium-2 large-2 column show-for-large category"><span class="">Time Travel</span></div>
@@ -77,6 +77,7 @@
                                 <option value="climate">Climate and Space</option>
                                 <option value="cs">Computer Science</option>
                                 <option value="ec">Electrical and Computer</option>
+                                <option value="ec">Industrial and Operations</option>
                                 <option value="me">Materials Science</option>
                                 <option value="mech">Mechanical</option>
                                 <option value="md">Multidisciplinary</option>
@@ -86,7 +87,7 @@
                         </label>
                         <label>Topics
                             <select>
-                                <option value="" selected disabled>Topics</option>
+                                <option value="" selected disabled>Story Types</option>
                                 <option value="impact">Impact</option>
                                 <option value="legends">Legends</option>
                                 <option value="experience">Experience</option>
@@ -211,7 +212,7 @@
         <div class="small-12 medium-6 large-4 columns feature">
             <div class="first">
                 <a class="feature_overlay" href="story-long.html">
-                    <span class="tags"><span class="tag_department">Aerospace</span> <span class="tag_decade">1960s</span></span>
+                    <span class="tags"><span class="tag_department">--varDepartmentTitle--</span> <span class="tag_decade">--varDecade--</span></span>
                     <h2>Title of the piece</h2>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.</p>
                 </a>
@@ -220,7 +221,7 @@
         <div class="small-12 medium-6 large-4 columns feature">
             <div class="second">
                 <a class="feature_overlay" href="story-short.html">
-                    <span class="tags"><span class="tag_department">Chemical</span> <span class="tag_decade">1950s</span></span>
+                    <span class="tags"><span class="tag_department">--varDepartmentTitle--</span> <span class="tag_decade">--varDecade--</span></span>
                     <h2>A little longer Title of the piece</h2>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.</p>
                 </a>
@@ -229,13 +230,25 @@
         <div class="small-12 medium-12 large-4 columns feature tablet-adjust">
             <div class="third">
                 <a class="feature_overlay tablet-overlay-adjust" href="story-long.html">
-                    <span class="tags"><span class="tag_department">Material Science</span> <span class="tag_decade">1940s</span></span>
+                    <span class="tags"><span class="tag_department">--varDepartmentTitle--</span> <span class="tag_decade">--varDecade--</span></span>
                     <h2>Title of the piece</h2>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.</p>
                 </a>
             </div>
         </div>
         
+    </section>
+    <section class="video_wrap row expanded full_width_feature video wow fadeInUp" data-wow-delay=".5s">
+        <video class="hide-for-medium-only show-for-large" id="video" preload="metadata" autoplay loop>
+            <source src="https://archive.org/download/Starry_Sky_Time_Lapse/Stars%20H264.mp4" type="video/mp4">
+        </video>
+        <img class="show-for-small" src="./assets/img/lead.jpg" title="Your browser does not support the <video> tag">
+        <div class="full_width_feature_overlay">
+            <hr>
+            <p class="serif-itals">The Leadership and Legacy of</p>
+            <p class="sans-hed-bold">Michigan Engineering</p>
+            <hr>
+        </div>
     </section>
     <!--Engin Disp Row-->
     <section class="row expanded category wow fadeInUp" data-wow-delay=".5s">
@@ -244,7 +257,7 @@
              <div class="medium-6 large-6 columns category_feature wow fadeInUp" data-wow-delay=".5s"><img src="assets/img/4by3-img.png" alt="Two column item image descriptive text">
     <div class="overlay small-12 small-uncentered medium-11 large-7 large-centered text-center">
         <a href="story-long.html">
-            <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
             <p class="hed">Sit Inceptos Lorem Ipsum Dolor Sit Amet Aenean Purus</p>
             <p class="dek">Cras justo odio, dapibus ac facilisis in, egestas egestas eget eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </a>
@@ -254,7 +267,7 @@
   <div class="medium-6 large-6 columns category_feature wow fadeInUp" data-wow-delay=".5s"><img src="assets/img/4by3-img.png" alt="Two column item image descriptive text">
     <div class="overlay small-12 small-uncentered medium-11 large-7 large-centered text-center">
         <a href="story-long.html">
-            <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
             <p class="hed">Sit Inceptos Lorem Ipsum Dolor Sit Amet Aenean Purus</p>
             <p class="dek">Cras justo odio, dapibus ac facilisis in, egestas egestas eget eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </a>
@@ -266,7 +279,7 @@
         <div class="row small-up-1 medium-up-2 large-up-4 small-collapse medium-uncollapse large-uncollapse" data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
              <div class="columns wow fadeInUp" data-wow-delay=".5s">
     <div class="category_secondary_feature card" data-equalizer-watch>
-        <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
         <div class="card-title"><a href="story-short.html"><span>Inceptos Amet Cursus Porta Magna Pharetra Sem</span></a></div>
         <div class="card-image">
             <a href="story-short.html"><img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text"></a>
@@ -282,7 +295,7 @@
 
   <div class="columns wow fadeInUp" data-wow-delay=".5s">
     <div class="category_secondary_feature card" data-equalizer-watch>
-        <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
         <div class="card-title"><a href="story-short.html"><span>Inceptos Amet Cursus Porta Magna Pharetra Sem</span></a></div>
         <div class="card-image">
             <a href="story-short.html"><img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text"></a>
@@ -298,7 +311,7 @@
 
   <div class="columns wow fadeInUp" data-wow-delay=".5s">
     <div class="category_secondary_feature card" data-equalizer-watch>
-        <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
         <div class="card-title"><a href="story-short.html"><span>Inceptos Amet Cursus Porta Magna Pharetra Sem</span></a></div>
         <div class="card-image">
             <a href="story-short.html"><img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text"></a>
@@ -322,18 +335,7 @@
             </div>
         </div>
     </section>
-    <section class="video_wrap row expanded full_width_feature video wow fadeInUp" data-wow-delay=".5s">
-        <video class="hide-for-medium-only show-for-large" id="video" preload="metadata" autoplay loop>
-            <source src="https://archive.org/download/Starry_Sky_Time_Lapse/Stars%20H264.mp4" type="video/mp4">
-        </video>
-        <img class="show-for-small" src="./assets/img/lead.jpg" title="Your browser does not support the <video> tag">
-        <div class="full_width_feature_overlay">
-            <hr>
-            <p class="serif-itals">The Leadership and Legacy of</p>
-            <p class="sans-hed-bold">Michigan Engineering</p>
-            <hr>
-        </div>
-    </section>
+    
     <section class="row expanded sharing_row brand_lines wow fadeInUp" data-wow-delay=".5s">
         <div class="small-12 medium-11 large-11 large-centered sharing_box row collapse">
             <div class="small-12 medium-4 large-4 columns get_more_image"><span class="label black get_more_label">GET MORE</span><img src="./assets/img/4by3-img.png" alt="Sharing box image descriptive text"></div>
@@ -395,7 +397,7 @@
              <div class="medium-6 large-6 columns category_feature wow fadeInUp" data-wow-delay=".5s"><img src="assets/img/4by3-img.png" alt="Two column item image descriptive text">
     <div class="overlay small-12 small-uncentered medium-11 large-7 large-centered text-center">
         <a href="story-long.html">
-            <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
             <p class="hed">Sit Inceptos Lorem Ipsum Dolor Sit Amet Aenean Purus</p>
             <p class="dek">Cras justo odio, dapibus ac facilisis in, egestas egestas eget eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </a>
@@ -405,7 +407,7 @@
   <div class="medium-6 large-6 columns category_feature wow fadeInUp" data-wow-delay=".5s"><img src="assets/img/4by3-img.png" alt="Two column item image descriptive text">
     <div class="overlay small-12 small-uncentered medium-11 large-7 large-centered text-center">
         <a href="story-long.html">
-            <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
             <p class="hed">Sit Inceptos Lorem Ipsum Dolor Sit Amet Aenean Purus</p>
             <p class="dek">Cras justo odio, dapibus ac facilisis in, egestas egestas eget eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </a>
@@ -417,7 +419,7 @@
         <div class="row small-up-1 medium-up-2 large-up-4 small-collapse medium-uncollapse large-uncollapse" data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
              <div class="columns wow fadeInUp" data-wow-delay=".5s">
     <div class="category_secondary_feature card" data-equalizer-watch>
-        <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
         <div class="card-title"><a href="story-short.html"><span>Inceptos Amet Cursus Porta Magna Pharetra Sem</span></a></div>
         <div class="card-image">
             <a href="story-short.html"><img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text"></a>
@@ -433,7 +435,7 @@
 
   <div class="columns wow fadeInUp" data-wow-delay=".5s">
     <div class="category_secondary_feature card" data-equalizer-watch>
-        <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
         <div class="card-title"><a href="story-short.html"><span>Inceptos Amet Cursus Porta Magna Pharetra Sem</span></a></div>
         <div class="card-image">
             <a href="story-short.html"><img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text"></a>
@@ -449,7 +451,7 @@
 
   <div class="columns wow fadeInUp" data-wow-delay=".5s">
     <div class="category_secondary_feature card" data-equalizer-watch>
-        <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
         <div class="card-title"><a href="story-short.html"><span>Inceptos Amet Cursus Porta Magna Pharetra Sem</span></a></div>
         <div class="card-image">
             <a href="story-short.html"><img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text"></a>
@@ -493,7 +495,7 @@
              <div class="medium-6 large-6 columns category_feature wow fadeInUp" data-wow-delay=".5s"><img src="assets/img/4by3-img.png" alt="Two column item image descriptive text">
     <div class="overlay small-12 small-uncentered medium-11 large-7 large-centered text-center">
         <a href="story-long.html">
-            <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
             <p class="hed">Sit Inceptos Lorem Ipsum Dolor Sit Amet Aenean Purus</p>
             <p class="dek">Cras justo odio, dapibus ac facilisis in, egestas egestas eget eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </a>
@@ -503,7 +505,7 @@
   <div class="medium-6 large-6 columns category_feature wow fadeInUp" data-wow-delay=".5s"><img src="assets/img/4by3-img.png" alt="Two column item image descriptive text">
     <div class="overlay small-12 small-uncentered medium-11 large-7 large-centered text-center">
         <a href="story-long.html">
-            <p class="secondary_tags"><span class="secondary_tag_department">Department</span> | <span class="secondary_tag_decade">1910s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
             <p class="hed">Sit Inceptos Lorem Ipsum Dolor Sit Amet Aenean Purus</p>
             <p class="dek">Cras justo odio, dapibus ac facilisis in, egestas egestas eget eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </a>
@@ -515,7 +517,7 @@
         <div class="row small-up-1 medium-up-2 large-up-4 small-collapse medium-uncollapse large-uncollapse" data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
              <div class="columns wow fadeInUp" data-wow-delay=".5s">
     <div class="category_secondary_feature card" data-equalizer-watch>
-        <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
         <div class="card-title"><a href="story-short.html"><span>Inceptos Amet Cursus Porta Magna Pharetra Sem</span></a></div>
         <div class="card-image">
             <a href="story-short.html"><img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text"></a>
@@ -531,7 +533,7 @@
 
   <div class="columns wow fadeInUp" data-wow-delay=".5s">
     <div class="category_secondary_feature card" data-equalizer-watch>
-        <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
         <div class="card-title"><a href="story-short.html"><span>Inceptos Amet Cursus Porta Magna Pharetra Sem</span></a></div>
         <div class="card-image">
             <a href="story-short.html"><img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text"></a>
@@ -547,7 +549,7 @@
 
   <div class="columns wow fadeInUp" data-wow-delay=".5s">
     <div class="category_secondary_feature card" data-equalizer-watch>
-        <p class="secondary_tags"><span class="secondary_tag_department">Department &amp; Department</span> | <span class="secondary_tag_decade">1980s</span></p>
+        <p class="secondary_tags"><span class="secondary_tag_department">--varDepartmentTitle--</span> | <span class="secondary_tag_decade">--varDecade--</span></p>
         <div class="card-title"><a href="story-short.html"><span>Inceptos Amet Cursus Porta Magna Pharetra Sem</span></a></div>
         <div class="card-image">
             <a href="story-short.html"><img src="./assets/img/16-9.jpg" alt="Feature card image descriptive text"></a>

@@ -4,12 +4,12 @@
         <div class="row bottom expanded collapse">
             <div class="title-bar-title medium-4 large-4 column">
                 <button class="hamburger hamburger--slider" type="button" data-toggle="main-menu" data-hide-for="large"><span class="hamburger-box"><span class="hamburger-inner"></span></button>
-                <a class="logo" href="./"><img src="./assets/img/CoE-horiz-rev.svg" alt="College of Engineering | University of Michigan"></a>
+                <a class="logo" href="./"><img src="./assets/img/CoE-BICENT-horiz-rev.svg" alt="College of Engineering | University of Michigan"></a>
             </div>
             <div class="medium-8 large-8 column main_menu disable-selection" data-toggle="main-menu">
                 <div class="row ">
                     <div class="medium-3 large-3 column show-for-medium category">
-                        <div {{#ifpage 'index'}}class="is-active web_header" {{/ifpage}} class="web_header">Bicentennial Web Project</div>
+                        <div class="web_header invisible">Bicentennial Web Project</div>
                     </div>
                     <div {{#ifpage 'story-type'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Story Type</span></div>
                     <div {{#ifpage 'decades'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Time Travel</span></div>
@@ -41,6 +41,7 @@
                                 <option value="climate">Climate and Space</option>
                                 <option value="cs">Computer Science</option>
                                 <option value="ec">Electrical and Computer</option>
+                                <option value="ec">Industrial and Operations</option>
                                 <option value="me">Materials Science</option>
                                 <option value="mech">Mechanical</option>
                                 <option value="md">Multidisciplinary</option>
@@ -50,7 +51,7 @@
                         </label>
                         <label>Topics
                             <select>
-                                <option value="" selected disabled>Topics</option>
+                                <option value="" selected disabled>Story Types</option>
                                 <option value="impact">Impact</option>
                                 <option value="legends">Legends</option>
                                 <option value="experience">Experience</option>
