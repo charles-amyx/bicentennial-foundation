@@ -129,7 +129,7 @@
                 opacity: .97;
                 box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .25), 0 3px 20px 0 rgba(0, 0, 0, .25);
                 background: darken( $michigan-blue, 3.5%);
-                transition: all .25s ease-in;
+                transition: all .25s linear;
                 .dropdown-pane {
                     background: darken( $michigan-blue, 3.5%);
                 }
@@ -144,7 +144,7 @@
                 }
                 a.logo img {
                     width: 50%;
-                    transition: all .25s ease-in;
+                    transition: all .25s linear;
                 }
             }
             &.sticky {
@@ -154,13 +154,13 @@
                 position: absolute;
                 bottom: 0;
                 width: 100%;
-                transition: all .25s ease;
+                transition: all .25s linear;
             }
         }
         a.logo {
             img {
                 width: 75%;
-                transition: all .25s ease-in;
+                transition: all .25s linear;
                 @include breakpoint(xxlarge) {
                     width: 80%;
                 }
@@ -291,6 +291,7 @@
             opacity: 1;
             font-size: inherit;
             max-height: 999em;
+            transition: all .25s ease;
         }
         .read-more-state ~ .read-more-trigger:before {
             content: "show more areas";

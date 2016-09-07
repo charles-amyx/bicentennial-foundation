@@ -576,7 +576,7 @@ a {
     font-family: 'bebas_neuebook';
 }
 
-.row.expanded h5 {
+.row h5 {
     background-color: $white;
     font-family: 'bebas_neuebold';
     font-size: 2.5rem;
@@ -663,10 +663,10 @@ a {
             width: 100%;
             height: 100%;
             padding: 1rem;
-            color: $medium-gray;
+            color: $white;
             transition: background-color .3s ease-in-out;
             &:hover {
-                color: $white;
+                color: $white-100;
                 background-color: rgba(0, 0, 0, 1);
                 transition: background-color .3s ease-in-out;
             }
