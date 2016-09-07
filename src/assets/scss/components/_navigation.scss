@@ -154,9 +154,9 @@
         }
         a.logo {
             img {
-                width: 55%;
+                width: 75%;
                 @include breakpoint(xxlarge) {
-                    width: 35%;
+                    width: 80%;
                 }
             }
         }
