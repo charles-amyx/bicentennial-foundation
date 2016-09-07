@@ -9,6 +9,7 @@ div.home {
     //
     section.feature_row {
         height: 65vh;
+        margin-bottom: 0;
         a:focus {
             color: $white !important;
         }

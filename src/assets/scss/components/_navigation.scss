@@ -129,6 +129,7 @@
                 opacity: .97;
                 box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .25), 0 3px 20px 0 rgba(0, 0, 0, .25);
                 background: darken( $michigan-blue, 3.5%);
+                transition: all .25s ease-in;
                 .dropdown-pane {
                     background: darken( $michigan-blue, 3.5%);
                 }
@@ -140,6 +141,10 @@
                 }
                 .category span {
                     color: $light-gray;
+                }
+                a.logo img {
+                    width: 50%;
+                    transition: all .25s ease-in;
                 }
             }
             &.sticky {
@@ -155,6 +160,7 @@
         a.logo {
             img {
                 width: 75%;
+                transition: all .25s ease-in;
                 @include breakpoint(xxlarge) {
                     width: 80%;
                 }
