@@ -4,10 +4,10 @@ description: This is the page description for the purposes of SEO
 ---
 <div class="home" id="content">
     <!--Lead Row-->
-    <section class="row feature_row small-collapse medium-collapse large-collapse wow fadeIn" data-wow-delay=".85s">
+    <section class="row expanded feature_row small-collapse medium-collapse large-collapse wow fadeIn" data-wow-delay=".85s">
         {{> lead_row}}
     </section>
-    <section class="video_wrap row  full_width_feature video wow fadeInUp" data-wow-delay=".5s">
+    <section class="video_wrap row expanded full_width_feature video wow fadeInUp" data-wow-delay=".5s">
         <video class="hide-for-medium-only show-for-large" id="video" preload="metadata" autoplay loop>
             <source src="https://archive.org/download/Starry_Sky_Time_Lapse/Stars%20H264.mp4" type="video/mp4">
         </video>
@@ -20,7 +20,7 @@ description: This is the page description for the purposes of SEO
         </div>
     </section>
     <!--Engin Disp Row-->
-    <section class="row category wow fadeInUp" data-wow-delay=".5s">
+    <section class="row expanded category wow fadeInUp" data-wow-delay=".5s">
         <h5 class="wow fadeInUp" data-wow-delay=".5s">Subject Areas</h5>
         <div class="row medium-collapse large-collapse">
             {{#repeat 2}} {{> two_column_items}} {{/repeat}}
@@ -38,7 +38,7 @@ description: This is the page description for the purposes of SEO
     </section>
     
     {{> social}}
-    <section class="row category wow fadeInUp">
+    <section class="row expanded category wow fadeInUp">
         <h5 class="wow fadeInUp" data-wow-delay=".5s">Time Travel</h5>
         <div class="row medium-collapse large-collapse">
             {{#repeat 2}} {{> two_column_items}} {{/repeat}}
@@ -55,7 +55,7 @@ description: This is the page description for the purposes of SEO
         </div>
     </section>
     {{> old_school_cool}}
-    <section class="row category wow fadeInUp">
+    <section class="row expanded category wow fadeInUp">
         <h5 class="wow fadeInUp" data-wow-delay=".5s">Story Types</h5>
         <div class="row medium-collapse large-collapse">
             {{#repeat 2}} {{> two_column_items}} {{/repeat}}
