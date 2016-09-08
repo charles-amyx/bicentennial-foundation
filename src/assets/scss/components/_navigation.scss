@@ -28,6 +28,10 @@
     }
     
     .navigation {
+        transition: all .2s linear;
+        &.sticky-container {
+            transition: all .2s linear;
+        }
         .small-text-center {
             @include breakpoint(small only) {
                 text-align: center;
