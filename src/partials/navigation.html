@@ -28,38 +28,40 @@
             <div class="small-12 medium-12 large-8 column">
                 <div class="row ">
                     <div class="small-12 medium-1 large-3 column hide-for-medium-down show-for-large search">
-                        <label>Search Term
-                            <input type="text">
-                        </label>
-                        <label>Subject Areas
-                            <select>
-                                <option value="" selected disabled>Select Subject Area</option>
-                                <option value="aero">Aerospace</option>
-                                <option value="bme">Biomedical</option>
-                                <option value="che">Chemical</option>
-                                <option value="civil">Civil and Environmental</option>
-                                <option value="climate">Climate and Space</option>
-                                <option value="cs">Computer Science</option>
-                                <option value="ec">Electrical and Computer</option>
-                                <option value="ec">Industrial and Operations</option>
-                                <option value="me">Materials Science</option>
-                                <option value="mech">Mechanical</option>
-                                <option value="md">Multidisciplinary</option>
-                                <option value="name">Naval Arch and Marine</option>
-                                <option value="nukerad">Nuclear and Radiological</option>
-                            </select>
-                        </label>
-                        <label>Topics
-                            <select>
-                                <option value="" selected disabled>Story Types</option>
-                                <option value="impact">Impact</option>
-                                <option value="legends">Legends</option>
-                                <option value="experience">Experience</option>
-                                <option value="on-the-move">On the move</option>
-                                <option value="quirky">Quirky</option>
-                            </select>
-                        </label>
-                        <input type="submit" class="button waves-effect waves-light" value="Search">
+                        <form action="search-results.html" method="get">
+                            <label>Search Term
+                                <input type="text">
+                            </label>
+                            <label>Subject Areas
+                                <select>
+                                    <option value="" selected disabled>Select Subject Area</option>
+                                    <option value="aero">Aerospace</option>
+                                    <option value="bme">Biomedical</option>
+                                    <option value="che">Chemical</option>
+                                    <option value="civil">Civil and Environmental</option>
+                                    <option value="climate">Climate and Space</option>
+                                    <option value="cs">Computer Science</option>
+                                    <option value="ec">Electrical and Computer</option>
+                                    <option value="ec">Industrial and Operations</option>
+                                    <option value="me">Materials Science</option>
+                                    <option value="mech">Mechanical</option>
+                                    <option value="md">Multidisciplinary</option>
+                                    <option value="name">Naval Arch and Marine</option>
+                                    <option value="nukerad">Nuclear and Radiological</option>
+                                </select>
+                            </label>
+                            <label>Topics
+                                <select>
+                                    <option value="" selected disabled>Story Types</option>
+                                    <option value="impact">Impact</option>
+                                    <option value="legends">Legends</option>
+                                    <option value="experience">Experience</option>
+                                    <option value="on-the-move">On the move</option>
+                                    <option value="quirky">Quirky</option>
+                                </select>
+                            </label>
+                            <input type="submit" class="button waves-effect waves-light" value="Search">
+                        </form>
                     </div>
                     <div class="small-6 medium-3 large-2 column sub_categories">
                         <ul class="">
