@@ -1,0 +1,38 @@
+---
+title: Search Results | Michigan Engineering
+description: This is the page description for the purposes of SEO
+---
+<div class="search_results" id="content">
+    <section class="row expanded category">
+        <div class="small-12 medium-11 large-11 large-centered xlarge-8 row wow fadeInUp">
+            <h5 class="wow fadeInUp" data-wow-delay=".5s">Search Results</h5></div>
+    </section>
+    <section class="row expanded content_sidebar">
+        <div class="small-12 medium-11 large-11 large-centered xlarge-8 row wow fadeInUp" data-wow-delay=".5s">
+            <div class="small-12 medium-8 medium-push-0 large-8 large-push-4 columns content_listing">
+                <div class="no_results">
+                    <h3>Sorry! Your search returned no results.</h3>
+                    <hr>
+                    <p><span><a href="{{ root }}/">Go to the Home page</a></span></p>
+                    <p><span class="button" type="button" data-toggle="main-menu">Try your search again?</span></p>
+                </div>
+                <div class="results">
+                    <h3>Your search returned the following results:</h3></div>
+                <hr> {{#repeat 10}} {{> content_list_item}} {{/repeat}}
+                <ul class="pagination" role="navigation" aria-label="Pagination">
+                    <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+                    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                    <li><a href="#" aria-label="Page 2">2</a></li>
+                    <li><a href="#" aria-label="Page 3">3</a></li>
+                    <li><a href="#" aria-label="Page 4">4</a></li>
+                    <li class="ellipsis" aria-hidden="true"></li>
+                    <li><a href="#" aria-label="Page 12">12</a></li>
+                    <li><a href="#" aria-label="Page 13">13</a></li>
+                    <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                </ul>
+            </div>
+            <div class="small-12 medium-3 medium-pull-0 large-4 large-pull-8 columns side_bar">{{> recent}}</div>
+        </div>
+    </section>
+</div>
+
