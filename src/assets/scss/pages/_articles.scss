@@ -172,8 +172,12 @@
                 width: auto;
             }
             .button {
-                position: absolute;
-                background-color: rgba($black, .7);
+                display: none;
+                @include breakpoint(small only) {
+                    display: block;
+                    position: absolute;
+                    background-color: rgba($black, .7);
+                }
             }
         }
         .orbit-caption {
