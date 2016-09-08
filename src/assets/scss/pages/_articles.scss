@@ -24,6 +24,7 @@
                 transition: opacity .3s ease-in-out;
                 &.initial_state {
                     opacity: 0;
+                    transition: opacity .5s ease;
                 }
                 &.is-stuck.is-at-top {
                     top: 5rem !important;
@@ -124,18 +125,12 @@
     blockquote {
         font-family: 'bebas_neuebold';
         font-size: 3rem;
-        line-height: 1;
+        line-height: .9;
         border: 0;
-        color: $black-100;
-        &:before,
-        &:after {
-            font-family: 'bebas_neuebold';
-            content: '"';
-        }
-        &:before {
-            display: inline-block;
-            margin-left: -15px;
-        }
+        color: $black;
+        border-left: 5px solid $michigan-maize;
+        margin: 0;
+        padding: 0 0 0 1.7rem;
     }
     .article_image {
         height: 100%;
