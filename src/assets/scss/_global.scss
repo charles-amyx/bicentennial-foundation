@@ -11,7 +11,7 @@
 }
 
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic);
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800';
 @font-face {
     font-family: 'bebas_neuebold';
     src: url('../fonts/bebasneue_bold-webfont.eot');
@@ -575,6 +575,13 @@ a {
     font-family: 'bebas_neuebold';
     font-size: 2.5rem;
     z-index: 1;
+    span.story_desc {
+        font-family: 'Open Sans';
+        font-weight: 100;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+    }
     &:before {
         content: '';
         display: inline-block;

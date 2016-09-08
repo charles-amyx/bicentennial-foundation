@@ -11,7 +11,7 @@
                     <div class="medium-3 large-3 column show-for-medium category">
                         <div class="web_header invisible">Bicentennial Web Project</div>
                     </div>
-                    <div {{#ifpage 'story-type'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Story Type</span></div>
+                    <div {{#ifpage 'story-type'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} {{#ifpage 'impact'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Story Type</span></div>
                     <div {{#ifpage 'decades'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Time Travel</span></div>
                     <div {{#ifpage 'subject-areas'}}class="is-active medium-3 large-3 column show-for-large category" {{/ifpage}} class="medium-3 large-3 column show-for-large category"><span class="">Subject Areas</span></div>
                     <div {{#ifpage 'events'}}class="is-active medium-2 large-2 column show-for-large category" {{/ifpage}} class="medium-2 large-2 column show-for-large category"><span class="">Upcoming</span></div>
@@ -70,7 +70,7 @@
                                 <a href="{{root}}story-type.html">see all stories <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                             </li>
                             <li class="item">
-                                <a href="{{root}}story-type.html">Impact</a>
+                                <a href="{{root}}impact.html">Impact</a>
                             </li>
                             <li class="item">
                                 <a href="{{root}}story-type.html">Legends</a>
