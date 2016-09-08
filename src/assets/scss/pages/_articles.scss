@@ -171,15 +171,41 @@
                 height: 80vh;
                 width: auto;
             }
+            .button {
+                position: absolute;
+                background-color: rgba($black, .7);
+            }
         }
         .orbit-caption {
             background: none !important;
             position: static;
             color: $white;
-            .orbit-hed {
+            .hed {
                 font-family: 'bebas_neuebold';
                 font-size: 3rem;
                 line-height: 1;
+                @include breakpoint(small only) {
+                    font-size: 1.5rem;
+                }
+            }
+            .dek {
+                @include breakpoint(small only) {
+                    font-size: .85rem;
+                }
+            }
+            @include breakpoint(small only) {
+                opacity: 0;
+                position: absolute;
+                background: rgba($black, .8) !important;
+                transition: opacity .2s ease;
+            }
+            &.showcaption {
+                @include breakpoint(small only) {
+                    opacity: 1;
+                    position: absolute;
+                    background: rgba($black, .8) !important;
+                    transition: opacity .2s ease;
+                }
             }
         }
     }
@@ -209,7 +235,7 @@
             color: $white-87;
             margin-right: .9rem;
             &:hover {
-                color: $white-100;
+                color: $arboretum-blue;
             }
             &:first-child {
                 margin-left: .9rem;
