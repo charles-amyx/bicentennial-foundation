@@ -33,6 +33,19 @@
                 }
             }
         }
+        p.caption {
+            color: $dark-gray;
+            font-family: 'Open Sans';
+            font-weight: 500;
+            font-size: .85rem;
+            margin-top: .5rem;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid $light-gray;
+            .fa.fa-camera-retro {
+                color: $black-87;
+                margin-right: .5rem;
+            }
+        }
     }
     .tag_container {
         margin-bottom: 0;
