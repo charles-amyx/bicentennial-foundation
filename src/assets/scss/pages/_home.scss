@@ -23,13 +23,15 @@ div.home {
             background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
             background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
             position: relative;
+            background-size: cover;
         }
         .second {
             height: 100%;
-            background: -moz-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.jpg') no-repeat center center;
-            background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.jpg') no-repeat center center;
-            background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.jpg') no-repeat center center;
+            background: -moz-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.png') no-repeat center center;
+            background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.png') no-repeat center center;
+            background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.png') no-repeat center center;
             position: relative;
+            background-size: cover;
         }
         .third {
             height: 100%;
@@ -37,6 +39,7 @@ div.home {
             background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
             background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
             position: relative;
+            background-size: cover;
         }
         &.tablet-adjust {
             @include breakpoint(medium only) {
