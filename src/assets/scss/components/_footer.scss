@@ -13,7 +13,7 @@ footer {
     }
     h6 {
         font-family: 'bebas_neue_regularregular';
-        font-size: 2rem;
+        font-size: 1.7rem;
         line-height: 1;
         @include breakpoint(medium down) {
             font-size: 1.5rem;
@@ -21,6 +21,7 @@ footer {
     }
     p {
         margin: 0;
+        font-size: .9rem;
         @include breakpoint(medium down) {
             font-size: .8rem;
         }
