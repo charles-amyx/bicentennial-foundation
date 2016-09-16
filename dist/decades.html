@@ -214,8 +214,12 @@
         <h5 class="wow fadeInUp" data-wow-delay=".5s">Decades</h5> <section class="timeline-row row wow fadeInUp" data-wow-delay=".5s">
     <div id='timeline-embed' style="width: 100%; height: 600px" class="small-12 medium-11 large-11 large-centered xlarge-9 old_school_box row collapse"></div>
     <script type="text/javascript">
+    var options = {
+        initial_zoom: 1
+    }
+
     timeline = new TL.Timeline('timeline-embed',
-        'https://docs.google.com/spreadsheets/d/1IxSIX8gdU8hSY9DtFnFG02AR7ID-EiX19nw9FOjGrGI/pubhtml');
+        'https://docs.google.com/spreadsheets/d/1IxSIX8gdU8hSY9DtFnFG02AR7ID-EiX19nw9FOjGrGI/pubhtml', options);
     </script>
 </section>
 
