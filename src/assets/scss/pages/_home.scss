@@ -140,12 +140,19 @@ div.home {
                     color: $white;
                     position: absolute;
                     bottom: 0;
-                    left: 0;
+                    left: 50%;
                     right: 0;
                     top: 32%;
                     height: 300px;
                     z-index: 99;
                     text-align: center;
+                    .toBeFaded {
+                        display: none;
+                        position: absolute;
+                        margin: auto 0;
+                        left: -50%;
+                        width: 100%;
+                    }
                     @include breakpoint(medium only) {
                         height: 20vw;
                         top: 10%;
