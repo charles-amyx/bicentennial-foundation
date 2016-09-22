@@ -11,6 +11,12 @@ footer {
             width: 100%;
         }
     }
+    .tagline {
+        text-align: center;
+        &.small-text {
+            font-size: .8rem;
+        }
+    }
     h6 {
         font-family: 'bebas_neue_regularregular';
         font-size: 1.7rem;
