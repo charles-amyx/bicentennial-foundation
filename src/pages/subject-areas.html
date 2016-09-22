@@ -1,10 +1,11 @@
 ---
 title: Subject Areas | Michigan Engineering
 description: This is the page description for the purposes of SEO
+category: Subject Areas
 ---
 <div class="areas" id="content">
     <section class="row expanded category">
-        <h5 class="wow fadeInUp" data-wow-delay=".5s">Subject Areas</h5>
+        <h5 class="wow fadeInUp" data-wow-delay=".5s">{{ category }} <span class="story_desc">{{ description }}</span></h5>
         <div class="row medium-collapse large-collapse wow fadeInUp" data-wow-delay=".5s">
             {{#repeat 2}} {{> two_column_items}} {{/repeat}}
         </div>
