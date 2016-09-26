@@ -1294,8 +1294,8 @@ $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
 
-/* 4. Cards
-   ========================================================================== */
+// 37. Cards
+// -----------
 
 $card-padding: 1rem !default;
 $card-bg-color: #fff !default;
@@ -1304,3 +1304,13 @@ $card-link-color-light: lighten($card-link-color, 20%) !default;
 $gutter-width: 1.5rem !default;
 $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
+
+// 37. VA Mixin
+// ------------
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

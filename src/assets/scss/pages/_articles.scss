@@ -162,6 +162,128 @@
     }
 }
 
+.about,
+.contact {
+    .featured_img {
+        background: url('../img/IMG_20160420_160457.jpg') no-repeat center center fixed;
+        background-size: cover;
+        .pattern_overlay {
+            height: 60vh;
+            background-image: linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black);
+            background-size: 2px 2px;
+            .text-center {
+                @include vertical-align();
+                .headline {
+                    font-family: 'bebas_neuebold';
+                    font-size: 5rem;
+                    line-height: 1;
+                    color: $white-87;
+                    @include breakpoint(small only) {
+                        font-size: 3.5rem;
+                        padding-left: 0.625rem;
+                        padding-right: 0.625rem;
+                    }
+                }
+            }
+        }
+    }
+    .content_sidebar {
+        margin-top: 4rem;
+        .article_content {
+            margin-bottom: 4rem;
+            @include breakpoint(small only) {
+                margin-bottom: 1rem;
+            }
+            p,
+            .subheader {
+                @include breakpoint(small only) {
+                    padding-left: 0.625rem;
+                    padding-right: 0.625rem;
+                }
+            }
+            .subhed {
+                font-size: 1.5rem;
+                @include breakpoint(small only) {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .article_side {
+            @include breakpoint(small only) {
+                margin-top: 0rem;
+            }
+        }
+    }
+}
+
+.four_oh_four {
+    .featured_img {
+        background: url('../img/IMG_20160420_160457.jpg') no-repeat center center fixed;
+        background-size: cover;
+        .pattern_overlay {
+            height: 60vh;
+            background-image: linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black);
+            background-size: 2px 2px;
+            overflow: hidden;
+            @include breakpoint(small only) {
+                height: 40vh;
+            }
+            .text-center {
+                @include vertical-align();
+                color: $white-87;
+                .headline {
+                    font-family: 'bebas_neuebold';
+                    font-size: 12rem;
+                    line-height: 1;
+                    margin: 0;
+                    @include breakpoint(small only) {
+                        font-size: 3.5rem;
+                        padding-left: 0.625rem;
+                        padding-right: 0.625rem;
+                    }
+                }
+                p {
+                    font-size: 2rem;
+                    margin: 0;
+                    line-height: 1;
+                }
+            }
+            img {
+                width: 50%;
+                opacity: 0.55;
+            }
+        }
+    }
+    .content_sidebar {
+        margin-top: 4rem;
+        .article_content {
+            margin-bottom: 4rem;
+            @include breakpoint(small only) {
+                margin-bottom: 1rem;
+            }
+            p,
+            .subheader {
+                @include breakpoint(small only) {
+                    padding-left: 0.625rem;
+                    padding-right: 0.625rem;
+                }
+            }
+            .subhed {
+                font-size: 1.5rem;
+                @include breakpoint(small only) {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .article_side {
+            margin-bottom: 4rem;
+            @include breakpoint(small only) {
+                margin-top: 0rem;
+            }
+        }
+    }
+}
+
 .orbit {
     .orbit-container {
         min-height: 80vh !important;
