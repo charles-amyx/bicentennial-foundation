@@ -3,190 +3,190 @@
 //
 //
 div.home {
-    //  Three Column Lead Features
-    //  --------------------------
-    //
-    //
-    section.feature_row {
-        height: 65vh;
-        margin-bottom: 0;
-        a:focus {
-            color: $white !important;
-        }
+  //  Three Column Lead Features
+  //  --------------------------
+  //
+  //
+  section.feature_row {
+    height: 65vh;
+    margin-bottom: 0;
+    a:focus {
+      color: $white !important;
     }
-    .feature {
-        overflow: hidden;
-        height: 100%;
-        .first {
-            height: 100%;
-            background: -moz-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
-            background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
-            background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
-            position: relative;
-            background-size: cover;
-        }
-        .second {
-            height: 100%;
-            background: -moz-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.png') no-repeat center center;
-            background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.png') no-repeat center center;
-            background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.png') no-repeat center center;
-            position: relative;
-            background-size: cover;
-        }
-        .third {
-            height: 100%;
-            background: -moz-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
-            background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
-            background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
-            position: relative;
-            background-size: cover;
-        }
-        &.tablet-adjust {
-            @include breakpoint(medium only) {
-                height: 25vh;
-            }
-        }
+  }
+  .feature {
+    overflow: hidden;
+    height: 100%;
+    .first {
+      height: 100%;
+      background: -moz-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
+      background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
+      background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
+      position: relative;
+      background-size: cover;
     }
-    a.feature_overlay {
-        color: $medium-gray;
-        display: block;
-        padding: 0 0.9375rem 0 0.9375rem;
-        transition: all 0.3s ease-in-out;
-        position: absolute;
-        top: 50%;
-        &.tablet-overlay-adjust {
-            @include breakpoint(medium only) {
-                top: 20%;
-            }
+    .second {
+      height: 100%;
+      background: -moz-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.png') no-repeat center center;
+      background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.png') no-repeat center center;
+      background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/ts.png') no-repeat center center;
+      position: relative;
+      background-size: cover;
+    }
+    .third {
+      height: 100%;
+      background: -moz-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
+      background: -webkit-linear-gradient(top, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
+      background: linear-gradient(to bottom, rgba(39, 39, 39, 0) 0%, rgba(39, 39, 39, 1) 100%), url('../img/side-6.png') no-repeat center center;
+      position: relative;
+      background-size: cover;
+    }
+    &.tablet-adjust {
+      @include breakpoint(medium only) {
+        height: 25vh;
+      }
+    }
+  }
+  a.feature_overlay {
+    color: $medium-gray;
+    display: block;
+    padding: 0 0.9375rem 0 0.9375rem;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    &.tablet-overlay-adjust {
+      @include breakpoint(medium only) {
+        top: 20%;
+      }
+    }
+    &:hover {
+      color: $white;
+    }
+    .tags {
+      display: block;
+      font-family: 'Open Sans';
+      font-weight: 900;
+      font-size: 12px;
+      margin-bottom: 1rem;
+      span {
+        padding: .45rem .5rem;
+        display: inline-block;
+        background-color: rgba($tappan-red, .7);
+        position: relative;
+      }
+      .tag_department {
+        margin-right: .55rem;
+        text-transform: uppercase;
+        &:after {
+          content: '';
+          border-top: 32px solid rgba($tappan-red, .7);
+          border-bottom: 5px solid transparent;
+          border-left: 0px solid transparent;
+          border-right: 5px solid transparent;
+          position: absolute;
+          top: 0;
+          left: 100%;
         }
-        &:hover {
-            color: $white;
+      }
+      .tag_decade {
+        &:before {
+          content: '';
+          border-top: 5px solid transparent;
+          border-bottom: 33px solid rgba($tappan-red, .7);
+          border-left: 5px solid transparent;
+          border-right: 0px solid rgba($tappan-red, .7);
+          position: absolute;
+          top: -5px;
+          left: -5px;
         }
-        .tags {
-            display: block;
-            font-family: 'Open Sans';
-            font-weight: 900;
-            font-size: 12px;
-            margin-bottom: 1rem;
-            span {
-                padding: .45rem .5rem;
-                display: inline-block;
-                background-color: rgba($tappan-red, .7);
-                position: relative;
-            }
-            .tag_department {
-                margin-right: .55rem;
-                text-transform: uppercase;
-                &:after {
-                    content: '';
-                    border-top: 32px solid rgba($tappan-red, .7);
-                    border-bottom: 5px solid transparent;
-                    border-left: 0px solid transparent;
-                    border-right: 5px solid transparent;
-                    position: absolute;
-                    top: 0;
-                    left: 100%;
-                }
-            }
-            .tag_decade {
-                &:before {
-                    content: '';
-                    border-top: 5px solid transparent;
-                    border-bottom: 33px solid rgba($tappan-red, .7);
-                    border-left: 5px solid transparent;
-                    border-right: 0px solid rgba($tappan-red, .7);
-                    position: absolute;
-                    top: -5px;
-                    left: -5px;
-                }
-            }
+      }
+    }
+    h2 {
+      font-family: 'bebas_neuebold';
+      font-size: 4rem;
+      line-height: .9;
+      @include breakpoint(small only) {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  //  Full Width Parallax Video
+  //  -------------------------
+  //
+  //
+  .full_width_feature {
+    &.video {
+      &.video_wrap {
+        width: 100%;
+        max-height: 30rem !important;
+        @include breakpoint(medium only) {
+          max-height: 30vw !important;
         }
-        h2 {
+        @include breakpoint(small only) {
+          max-height: 35vw !important;
+        }
+        #video {
+          overflow: hidden;
+        }
+        .overlay_container {
+          position: relative;
+          height: 20rem;
+          @include breakpoint(medium down) {
+            height: auto;
+            margin-top: 5%;
+          }
+        }
+        .full_width_feature_overlay {
+          color: $white;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          right: 0;
+          top: 32%;
+          height: 300px;
+          z-index: 99;
+          text-align: center;
+          .toBeFaded {
+            display: none;
+            position: absolute;
+            margin: auto 0;
+            left: -50%;
+            width: 100%;
+          }
+          @include breakpoint(medium only) {
+            height: 20vw;
+            top: 10%;
+          }
+          @include breakpoint(small only) {
+            top: 1%;
+          }
+          hr {
+            width: 20%;
+            border-top: 3px double $white;
+            border-bottom: 0;
+          }
+          p {
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            text-shadow: 0px 0px 13px rgba(67, 67, 69, 0.8);
+          }
+          .serif-itals {
+            font-style: italic;
+            font-size: 1.5rem;
+            @include breakpoint(medium down) {
+              font-size: 1rem;
+            }
+          }
+          .sans-hed-bold {
             font-family: 'bebas_neuebold';
-            font-size: 4rem;
-            line-height: .9;
-            @include breakpoint(small only) {
-                font-size: 2.2rem;
+            font-size: 5rem;
+            @include breakpoint(medium down) {
+              font-size: 3rem;
             }
+          }
         }
+      }
     }
-    //  Full Width Parallax Video
-    //  -------------------------
-    //
-    //
-    .full_width_feature {
-        &.video {
-            &.video_wrap {
-                width: 100%;
-                max-height: 30rem !important;
-                @include breakpoint(medium only) {
-                    max-height: 30vw !important;
-                }
-                @include breakpoint(small only) {
-                    max-height: 35vw !important;
-                }
-                #video {
-                    overflow: hidden;
-                }
-                .overlay_container {
-                    position: relative;
-                    height: 20rem;
-                    @include breakpoint(medium down) {
-                        height: auto;
-                        margin-top: 5%;
-                    }
-                }
-                .full_width_feature_overlay {
-                    color: $white;
-                    position: absolute;
-                    bottom: 0;
-                    left: 50%;
-                    right: 0;
-                    top: 32%;
-                    height: 300px;
-                    z-index: 99;
-                    text-align: center;
-                    .toBeFaded {
-                        display: none;
-                        position: absolute;
-                        margin: auto 0;
-                        left: -50%;
-                        width: 100%;
-                    }
-                    @include breakpoint(medium only) {
-                        height: 20vw;
-                        top: 10%;
-                    }
-                    @include breakpoint(small only) {
-                        top: 1%;
-                    }
-                    hr {
-                        width: 20%;
-                        border-top: 3px double $white;
-                        border-bottom: 0;
-                    }
-                    p {
-                        margin: 0;
-                        padding: 0;
-                        line-height: 1;
-                        text-shadow: 0px 0px 13px rgba(67, 67, 69, 0.8);
-                    }
-                    .serif-itals {
-                        font-style: italic;
-                        font-size: 1.5rem;
-                        @include breakpoint(medium down) {
-                            font-size: 1rem;
-                        }
-                    }
-                    .sans-hed-bold {
-                        font-family: 'bebas_neuebold';
-                        font-size: 5rem;
-                        @include breakpoint(medium down) {
-                            font-size: 3rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
+  }
 }
