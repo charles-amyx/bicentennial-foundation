@@ -1306,7 +1306,8 @@ $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
 
 // 37. VA Mixin
-// ------------
+// Even though there is one built in to flex grid, huh
+// ---------------------------------------------------
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;
