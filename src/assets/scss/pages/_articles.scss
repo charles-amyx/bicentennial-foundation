@@ -1,384 +1,387 @@
 // Articles
 .article {
-    margin-top: 4rem;
-    .article_content {
-        margin-bottom: 4rem;
-        @include breakpoint(small only) {
-            margin-bottom: 1rem;
-        }
-        p,
-        .subheader {
-            @include breakpoint(small only) {
-                padding-left: 0.625rem;
-                padding-right: 0.625rem;
-            }
-        }
+  margin-top: 4rem;
+  .article_content {
+    margin-bottom: 4rem;
+    @include breakpoint(small only) {
+      margin-bottom: 1rem;
     }
-    .article_side {
-        margin-top: 3rem;
-        @include breakpoint(small only) {
-            margin-top: 0rem;
-        }
-        .sticky-container {
-            .sticky {
-                transition: opacity .3s ease-in-out;
-                &.initial_state {
-                    opacity: 0;
-                    transition: opacity .5s ease;
-                }
-                &.is-stuck.is-at-top {
-                    top: 5rem !important;
-                    opacity: 1;
-                    transition: opacity .3s ease-in-out;
-                }
-            }
-        }
-        p.caption {
-            color: $black;
-            font-family: 'Open Sans';
-            font-weight: 500;
-            font-size: .85rem;
-            margin-top: .5rem;
-            padding-bottom: .5rem;
-            border-bottom: 1px solid $light-gray;
-            .fa.fa-camera-retro {
-                color: $black-87;
-                margin-right: .5rem;
-            }
-        }
-    }
-    .tag_container {
-        margin-bottom: 0;
-        .tags {
-            display: block;
-            font-family: 'Open Sans';
-            font-weight: 900;
-            font-size: 12px;
-            color: $white;
-            span {
-                padding: .45rem .5rem;
-                display: inline-block;
-                background-color: rgba($tappan-red, 1);
-                position: relative;
-            }
-            .tag_department {
-                margin-right: .55rem;
-                text-transform: uppercase;
-                &:after {
-                    content: '';
-                    border-top: 32px solid rgba($tappan-red, 1);
-                    border-bottom: 5px solid transparent;
-                    border-left: 0px solid transparent;
-                    border-right: 5px solid transparent;
-                    position: absolute;
-                    top: 0;
-                    left: 100%;
-                }
-            }
-            .tag_decade {
-                &:before {
-                    content: '';
-                    border-top: 5px solid transparent;
-                    border-bottom: 33px solid rgba($tappan-red, 1);
-                    border-left: 5px solid transparent;
-                    border-right: 0px solid rgba($tappan-red, 1);
-                    position: absolute;
-                    top: -5px;
-                    left: -5px;
-                }
-            }
-        }
-    }
-    .headline {
-        font-family: 'bebas_neuebold';
-        font-size: 5rem;
-        line-height: 1;
-        @include breakpoint(small only) {
-            font-size: 3.5rem;
-            padding-left: 0.625rem;
-            padding-right: 0.625rem;
-        }
-    }
-    .subhed {
-        font-size: 1.5rem;
-        @include breakpoint(small only) {
-            font-size: 1.25rem;
-        }
-    }
-    .byline {
-        font-style: italic;
-    }
+    p,
     .subheader {
-        color: $black;
-        font-family: 'Open Sans';
-        font-weight: 900;
-        font-size: 1.5rem;
-        margin-top: 2.5rem;
+      @include breakpoint(small only) {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+      }
     }
-    .sharing {
-        font-family: 'Open Sans';
-        font-weight: 900;
-        font-variant: small-caps;
-        margin: 1.5rem 0;
-        padding: 1rem 0;
-        border-top: 1px solid $light-gray;
-        border-bottom: 1px solid $light-gray;
-        color: $dark-gray;
-        a {
-            color: $dark-gray;
-            margin-right: .9rem;
-            &:hover {
-                color: $black-87;
-            }
-            &:first-child {
-                margin-left: .9rem;
-            }
+  }
+  .article_side {
+    margin-top: 3rem;
+    @include breakpoint(small only) {
+      margin-top: 0rem;
+    }
+    .sticky-container {
+      .sticky {
+        transition: opacity .3s ease-in-out;
+        &.initial_state {
+          opacity: 0;
+          transition: opacity .5s ease;
         }
+        &.is-stuck.is-at-top {
+          top: 5rem !important;
+          opacity: 1;
+          transition: opacity .3s ease-in-out;
+        }
+      }
     }
-    blockquote {
-        font-family: 'bebas_neuebold';
-        font-size: 3rem;
-        line-height: .9;
-        border: 0;
-        color: $black;
-        border-left: 5px solid $michigan-maize;
-        margin: 0;
-        padding: 0 0 0 1.7rem;
+    p.caption {
+      color: $black;
+      font-family: 'Open Sans';
+      font-weight: 500;
+      font-size: .85rem;
+      margin-top: .5rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid $light-gray;
+      .fa.fa-camera-retro {
+        color: $black-87;
+        margin-right: .5rem;
+      }
     }
-    .article_image {
-        height: 100%;
+  }
+  .tag_container {
+    margin-bottom: 0;
+    .tags {
+      display: block;
+      font-family: 'Open Sans';
+      font-weight: 900;
+      font-size: 12px;
+      color: $white;
+      span {
+        padding: .45rem .5rem;
+        display: inline-block;
+        background-color: rgba($tappan-red, 1);
         position: relative;
-        .expand {
-            position: absolute;
-            display: inline;
-            top: 0;
-            left: 0;
-            .expand_background {
-                background-color: rgba($tappan-red, .85);
-                width: 33px;
-                height: 33px;
-            }
+      }
+      .tag_department {
+        margin-right: .55rem;
+        text-transform: uppercase;
+        &:after {
+          content: '';
+          border-top: 32px solid rgba($tappan-red, 1);
+          border-bottom: 5px solid transparent;
+          border-left: 0px solid transparent;
+          border-right: 5px solid transparent;
+          position: absolute;
+          top: 0;
+          left: 100%;
         }
+      }
+      .tag_decade {
+        &:before {
+          content: '';
+          border-top: 5px solid transparent;
+          border-bottom: 33px solid rgba($tappan-red, 1);
+          border-left: 5px solid transparent;
+          border-right: 0px solid rgba($tappan-red, 1);
+          position: absolute;
+          top: -5px;
+          left: -5px;
+        }
+      }
     }
+  }
+  .headline {
+    font-family: 'bebas_neuebold';
+    font-size: 5rem;
+    line-height: 1;
+    @include breakpoint(small only) {
+      font-size: 3.5rem;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+    }
+  }
+  .subhed {
+    font-size: 1.5rem;
+    @include breakpoint(small only) {
+      font-size: 1.25rem;
+    }
+  }
+  .byline {
+    font-style: italic;
+  }
+  .subheader {
+    color: $black;
+    font-family: 'Open Sans';
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .sharing {
+    font-family: 'Open Sans';
+    font-weight: 900;
+    font-variant: small-caps;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    color: $dark-gray;
+    a {
+      color: $dark-gray;
+      margin-right: .9rem;
+      &:hover {
+        color: $black-87;
+      }
+      &:first-child {
+        margin-left: .9rem;
+      }
+    }
+  }
+  blockquote {
+    font-family: 'bebas_neuebold';
+    font-size: 3rem;
+    line-height: .9;
+    border: 0;
+    color: $black;
+    border-left: 5px solid $michigan-maize;
+    margin: 0;
+    padding: 0 0 0 1.7rem;
+  }
+  .article_image {
+    height: 100%;
+    position: relative;
+    .expand {
+      position: absolute;
+      display: inline;
+      top: 0;
+      left: 0;
+      .expand_background {
+        background-color: rgba($tappan-red, .85);
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
 }
 
 .about,
 .contact {
-    .featured_img {
-        background: url('../img/IMG_20160420_160457.jpg') no-repeat center center fixed;
-        background-size: cover;
-        .pattern_overlay {
-            height: 60vh;
-            background-image: linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black);
-            background-size: 2px 2px;
-            .text-center {
-                @include vertical-align();
-                .headline {
-                    font-family: 'bebas_neuebold';
-                    font-size: 5rem;
-                    line-height: 1;
-                    color: $white-87;
-                    @include breakpoint(small only) {
-                        font-size: 3.5rem;
-                        padding-left: 0.625rem;
-                        padding-right: 0.625rem;
-                    }
-                }
-            }
+  li {
+    margin-bottom: 1rem;
+  }
+  .featured_img {
+    background: url('../img/IMG_20160420_160457.jpg') no-repeat center center fixed;
+    background-size: cover;
+    .pattern_overlay {
+      height: 60vh;
+      background-image: linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black);
+      background-size: 2px 2px;
+      .text-center {
+        @include vertical-align();
+        .headline {
+          font-family: 'bebas_neuebold';
+          font-size: 5rem;
+          line-height: 1;
+          color: $white-87;
+          @include breakpoint(small only) {
+            font-size: 3.5rem;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+          }
         }
+      }
     }
-    .content_sidebar {
-        margin-top: 4rem;
-        .article_content {
-            margin-bottom: 4rem;
-            @include breakpoint(small only) {
-                margin-bottom: 1rem;
-            }
-            p,
-            .subheader {
-                @include breakpoint(small only) {
-                    padding-left: 0.625rem;
-                    padding-right: 0.625rem;
-                }
-            }
-            .subhed {
-                font-size: 1.5rem;
-                @include breakpoint(small only) {
-                    font-size: 1.25rem;
-                }
-            }
+  }
+  .content_sidebar {
+    margin-top: 4rem;
+    .article_content {
+      margin-bottom: 4rem;
+      @include breakpoint(small only) {
+        margin-bottom: 1rem;
+      }
+      p,
+      .subheader {
+        @include breakpoint(small only) {
+          padding-left: 0.625rem;
+          padding-right: 0.625rem;
         }
-        .article_side {
-            @include breakpoint(small only) {
-                margin-top: 0rem;
-            }
+      }
+      .subhed {
+        font-size: 1.5rem;
+        @include breakpoint(small only) {
+          font-size: 1.25rem;
         }
+      }
     }
+    .article_side {
+      @include breakpoint(small only) {
+        margin-top: 0rem;
+      }
+    }
+  }
 }
 
 .four_oh_four {
-    .featured_img {
-        background: url('../img/IMG_20160420_160457.jpg') no-repeat center center fixed;
-        background-size: cover;
-        .pattern_overlay {
-            height: 60vh;
-            background-image: linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black);
-            background-size: 2px 2px;
-            overflow: hidden;
-            @include breakpoint(small only) {
-                height: 40vh;
-            }
-            .text-center {
-                @include vertical-align();
-                color: $white-87;
-                .headline {
-                    font-family: 'bebas_neuebold';
-                    font-size: 12rem;
-                    line-height: 1;
-                    margin: 0;
-                    @include breakpoint(small only) {
-                        font-size: 3.5rem;
-                        padding-left: 0.625rem;
-                        padding-right: 0.625rem;
-                    }
-                }
-                p {
-                    font-size: 2rem;
-                    margin: 0;
-                    line-height: 1;
-                }
-            }
-            img {
-                width: 50%;
-                opacity: 0.55;
-            }
+  .featured_img {
+    background: url('../img/IMG_20160420_160457.jpg') no-repeat center center fixed;
+    background-size: cover;
+    .pattern_overlay {
+      height: 60vh;
+      background-image: linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black);
+      background-size: 2px 2px;
+      overflow: hidden;
+      @include breakpoint(small only) {
+        height: 40vh;
+      }
+      .text-center {
+        @include vertical-align();
+        color: $white-87;
+        .headline {
+          font-family: 'bebas_neuebold';
+          font-size: 12rem;
+          line-height: 1;
+          margin: 0;
+          @include breakpoint(small only) {
+            font-size: 3.5rem;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+          }
         }
+        p {
+          font-size: 2rem;
+          margin: 0;
+          line-height: 1;
+        }
+      }
+      img {
+        width: 50%;
+        opacity: 0.55;
+      }
     }
-    .content_sidebar {
-        margin-top: 4rem;
-        .article_content {
-            margin-bottom: 4rem;
-            @include breakpoint(small only) {
-                margin-bottom: 1rem;
-            }
-            p,
-            .subheader {
-                @include breakpoint(small only) {
-                    padding-left: 0.625rem;
-                    padding-right: 0.625rem;
-                }
-            }
-            .subhed {
-                font-size: 1.5rem;
-                @include breakpoint(small only) {
-                    font-size: 1.25rem;
-                }
-            }
+  }
+  .content_sidebar {
+    margin-top: 4rem;
+    .article_content {
+      margin-bottom: 4rem;
+      @include breakpoint(small only) {
+        margin-bottom: 1rem;
+      }
+      p,
+      .subheader {
+        @include breakpoint(small only) {
+          padding-left: 0.625rem;
+          padding-right: 0.625rem;
         }
-        .article_side {
-            margin-bottom: 4rem;
-            @include breakpoint(small only) {
-                margin-top: 0rem;
-            }
+      }
+      .subhed {
+        font-size: 1.5rem;
+        @include breakpoint(small only) {
+          font-size: 1.25rem;
         }
+      }
     }
+    .article_side {
+      margin-bottom: 4rem;
+      @include breakpoint(small only) {
+        margin-top: 0rem;
+      }
+    }
+  }
 }
 
 .orbit {
-    .orbit-container {
-        min-height: 80vh !important;
-        li.orbit-slide {
-            max-height: 80vh !important;
-            img.orbit-image {
-                height: 80vh;
-                width: auto;
-            }
-            .button {
-                display: none;
-                @include breakpoint(small only) {
-                    display: block;
-                    position: absolute;
-                    background-color: rgba($black, .7);
-                }
-            }
+  .orbit-container {
+    min-height: 80vh !important;
+    li.orbit-slide {
+      max-height: 80vh !important;
+      img.orbit-image {
+        height: 80vh;
+        width: auto;
+      }
+      .button {
+        display: none;
+        @include breakpoint(small only) {
+          display: block;
+          position: absolute;
+          background-color: rgba($black, .7);
         }
-        .orbit-caption {
-            background: none !important;
-            position: static;
-            color: $white;
-            .hed {
-                font-family: 'bebas_neuebold';
-                font-size: 3rem;
-                line-height: 1;
-                @include breakpoint(small only) {
-                    font-size: 1.5rem;
-                }
-            }
-            .dek {
-                @include breakpoint(small only) {
-                    font-size: .85rem;
-                }
-            }
-            @include breakpoint(small only) {
-                opacity: 0;
-                position: absolute;
-                background: rgba($black, .8) !important;
-                transition: opacity .2s ease;
-            }
-            &.showcaption {
-                @include breakpoint(small only) {
-                    opacity: 1;
-                    position: absolute;
-                    background: rgba($black, .8) !important;
-                    transition: opacity .2s ease;
-                }
-            }
-        }
+      }
     }
-    .orbit-bullets button {
-        width: .9rem !important;
-        height: .9rem !important;
-        margin: 0.25rem !important;
-        background-color: $white !important;
-        &.is-active {
-            background-color: $tappan-red !important;
+    .orbit-caption {
+      background: none !important;
+      position: static;
+      color: $white;
+      .hed {
+        font-family: 'bebas_neuebold';
+        font-size: 3rem;
+        line-height: 1;
+        @include breakpoint(small only) {
+          font-size: 1.5rem;
         }
-        &:hover {
-            background-color: $tappan-red !important;
-            transition: all .3s ease-in-out;
+      }
+      .dek {
+        @include breakpoint(small only) {
+          font-size: .85rem;
         }
+      }
+      @include breakpoint(small only) {
+        opacity: 0;
+        position: absolute;
+        background: rgba($black, .8) !important;
+        transition: opacity .2s ease;
+      }
+      &.showcaption {
+        @include breakpoint(small only) {
+          opacity: 1;
+          position: absolute;
+          background: rgba($black, .8) !important;
+          transition: opacity .2s ease;
+        }
+      }
     }
-    .sharing {
-        font-family: 'Open Sans';
-        font-weight: 900;
-        font-variant: small-caps;
-        margin: 1.5rem 0;
-        padding: 1rem 0;
-        border-top: 1px solid rgba($light-gray, .5);
-        border-bottom: 1px solid rgba($light-gray, .5);
-        color: $white-87;
-        a {
-            color: $white-87;
-            margin-right: .9rem;
-            &:hover {
-                color: $arboretum-blue;
-            }
-            &:first-child {
-                margin-left: .9rem;
-            }
-        }
+  }
+  .orbit-bullets button {
+    width: .9rem !important;
+    height: .9rem !important;
+    margin: 0.25rem !important;
+    background-color: $white !important;
+    &.is-active {
+      background-color: $tappan-red !important;
     }
+    &:hover {
+      background-color: $tappan-red !important;
+      transition: all .3s ease-in-out;
+    }
+  }
+  .sharing {
+    font-family: 'Open Sans';
+    font-weight: 900;
+    font-variant: small-caps;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba($light-gray, .5);
+    border-bottom: 1px solid rgba($light-gray, .5);
+    color: $white-87;
+    a {
+      color: $white-87;
+      margin-right: .9rem;
+      &:hover {
+        color: $arboretum-blue;
+      }
+      &:first-child {
+        margin-left: .9rem;
+      }
+    }
+  }
 }
 
 .reveal {
-    background-color: rgba($black-100, .97) !important;
-    .close-button {
-        color: $white-87 !important;
-        font-size: 3rem !important;
-        font-weight: bold;
-        &:hover {
-            color: $tappan-red !important;
-            transition: all .3s ease-in-out;
-        }
+  background-color: rgba($black-100, .97) !important;
+  .close-button {
+    color: $white-87 !important;
+    font-size: 3rem !important;
+    font-weight: bold;
+    &:hover {
+      color: $tappan-red !important;
+      transition: all .3s ease-in-out;
     }
+  }
 }
