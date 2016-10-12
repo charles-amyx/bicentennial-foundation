@@ -117,8 +117,8 @@ div.home {
   .full_width_feature {
     &.video {
       &.video_wrap {
-        width: 100%;
-        max-height: 30rem !important;
+        max-height: 56vh !important;
+        margin-bottom: 0;
         @include breakpoint(medium only) {
           max-height: 30vw !important;
         }

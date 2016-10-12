@@ -171,7 +171,7 @@
     background: url('../img/IMG_20160420_160457.jpg') no-repeat center center fixed;
     background-size: cover;
     .pattern_overlay {
-      height: 60vh;
+      height: 45vh;
       background-image: linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black);
       background-size: 2px 2px;
       @include breakpoint(medium down) {
@@ -237,12 +237,12 @@
     background: url('../img/IMG_20160420_160457.jpg') no-repeat center center fixed;
     background-size: cover;
     .pattern_overlay {
-      height: 60vh;
+      height: 45vh;
       background-image: linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient( 45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black), linear-gradient(-45deg, $black 15%, transparent 15%, transparent 85%, $black 85%, $black);
       background-size: 2px 2px;
       overflow: hidden;
       @include breakpoint(small only) {
-        height: 40vh;
+        height: 33vh;
       }
       .text-center {
         @include vertical-align();

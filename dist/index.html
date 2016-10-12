@@ -245,9 +245,9 @@
     </section>
     <section class="video_wrap row expanded full_width_feature video wow fadeInUp" data-wow-delay=".5s">
         <video class="hide-for-medium-only show-for-large" id="video" preload="metadata" autoplay loop>
-            <source src="https://archive.org/download/Starry_Sky_Time_Lapse/Stars%20H264.mp4" type="video/mp4">
+            <source src="/assets/vid/background.webm" type="video/mp4">
         </video>
-        <img class="show-for-small" src="./assets/img/lead.jpg" title="Your browser does not support the <video> tag">
+        <img class="show-for-small-only" src="assets/img/lead.jpg" title="Your browser does not support the <video> tag">
         <div class="full_width_feature_overlay">
             <div class="animation-wrapper">
                 <div id="elem0" class="toBeFaded">
@@ -395,9 +395,9 @@
             <div class="small-12 medium-3 large-3 columns newsletter"><span class="label blue">NEWSLETTER</span>
                 <div class="newsletter_text">Would you like to stay up-to-date with latest from Michigan Engineering?
                     <br>Sign up for our newsletter.</div>
-                <form>
+                <form action="http://umich.us9.list-manage1.com/subscribe?u=9b2f8a58c98a068cf202c13cb&id=7181a849ee" method="post">
                     <div class="input-group">
-                        <input class="input-group-field" type="text">
+                        <input class="input-group-field" type="text" name="MERGE0">
                         <div class="input-group-button">
                             <input type="submit" class="button" value="Submit">
                         </div>
@@ -672,8 +672,8 @@ $(document).ready(function() {
     $('.animation-wrapper').addClass('is-animating');
     $(function (){
  
-    var yourFade = 2, // the amount of time in seconds that the elements will fade in AND fade out
-        yourDelay = 3, // the amount of time in seconds that there will be a delay between the fade ins and fade outs
+    var yourFade = .8, // the amount of time in seconds that the elements will fade in AND fade out
+        yourDelay = 2.25, // the amount of time in seconds that there will be a delay between the fade ins and fade outs
         fadeTime = yourFade * 1000, //convert fade seconds to milliseconds (1000)
         delayTime = yourDelay * 1000, // convert delay seconds to milliseconds (2000)
         totalTime = fadeTime + delayTime, //3000 milliseconds...needed for all those delays we talked about
