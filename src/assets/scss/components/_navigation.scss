@@ -251,7 +251,8 @@
                 font-weight: 700;
                 color: $white;
             }
-            input[type=text] {
+            input[type=text],
+            input[type=email] {
                 background-color: rgba($light-gray, .1);
                 border: 0;
                 margin-bottom: 1rem;
